@@ -3,7 +3,6 @@
 ## FreeCodeCamp Solution
 
 * [introduction](README.md)
-* Redux
 
 ## Front End Libraries Certification
 
@@ -27,5 +26,5 @@
   * [React: Give Sibling Elements a Unique Key Attribute](react-give-sibling-elements-a-unique-key-attribute.md)
   * [React: Use Array.filter\(\) to Dynamically Filter an Array](react-use-arrayfilter-to-dynamically-filter-an-array.md)
   * [React: Render React on the Server with renderToString](react-render-react-on-the-server-with-rendertostring.md)
-* [React](react.md)
+* Redux
 
