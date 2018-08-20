@@ -29,4 +29,5 @@
 * [Redux](redux.md)
   * [Redux: Create a Redux Store](redux/redux-create-a-redux-store.md)
   * [Redux: Get State from the Redux Store](redux/redux-get-state-from-the-redux-store.md)
+  * [Redux: Define a Redux Action](redux/redux-define-a-redux-action.md)
 
