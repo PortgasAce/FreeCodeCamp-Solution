@@ -1,0 +1,586 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>React: Manage Updates with Lifecycle Methods · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="react-optimize-re-renders-with-shouldcomponentupdate.html" />
+    
+    
+    <link rel="prev" href="react-add-event-listeners.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">FreeCodeCamp Solution</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Front End Libraries Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="react-pass-state-as-props-to-child-components.html">
+            
+                <a href="react-pass-state-as-props-to-child-components.html">
+            
+                    
+                    React: Pass State as Props to Child Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="react-pass-a-callback-as-props.html">
+            
+                <a href="react-pass-a-callback-as-props.html">
+            
+                    
+                    React: Pass a Callback as Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="react-use-the-lifecycle-method-componentwillmount.html">
+            
+                <a href="react-use-the-lifecycle-method-componentwillmount.html">
+            
+                    
+                    React: Use the Lifecycle Method componentWillMount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="react-use-the-lifecycle-method-componentdidmount.html">
+            
+                <a href="react-use-the-lifecycle-method-componentdidmount.html">
+            
+                    
+                    React: Use the Lifecycle Method componentDidMount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="react-add-event-listeners.html">
+            
+                <a href="react-add-event-listeners.html">
+            
+                    
+                    React: Add Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.6" data-path="react-manage-updates-with-lifecycle-methods.html">
+            
+                <a href="react-manage-updates-with-lifecycle-methods.html">
+            
+                    
+                    React: Manage Updates with Lifecycle Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="react-optimize-re-renders-with-shouldcomponentupdate.html">
+            
+                <a href="react-optimize-re-renders-with-shouldcomponentupdate.html">
+            
+                    
+                    React: Optimize Re-Renders with shouldComponentUpdate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="react-introducing-inline-styles.html">
+            
+                <a href="react-introducing-inline-styles.html">
+            
+                    
+                    React: Introducing Inline Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="react-add-inline-styles-in-react.html">
+            
+                <a href="react-add-inline-styles-in-react.html">
+            
+                    
+                    React: Add Inline Styles in React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="react-use-advanced-javascript-in-react-render-method.html">
+            
+                <a href="react-use-advanced-javascript-in-react-render-method.html">
+            
+                    
+                    React: Use Advanced JavaScript in React Render Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="react-render-with-an-ifelse-condition.html">
+            
+                <a href="react-render-with-an-ifelse-condition.html">
+            
+                    
+                    React: Render with an If/Else Condition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="react-use-andand-for-a-more-concise-conditional.html">
+            
+                <a href="react-use-andand-for-a-more-concise-conditional.html">
+            
+                    
+                    React: Use && for a More Concise Conditional
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="react-use-a-ternary-expression-for-conditional-rendering.html">
+            
+                <a href="react-use-a-ternary-expression-for-conditional-rendering.html">
+            
+                    
+                    React: Use a Ternary Expression for Conditional Rendering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="react-render-conditionally-from-props.html">
+            
+                <a href="react-render-conditionally-from-props.html">
+            
+                    
+                    React: Render Conditionally from Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="react-change-inline-css-conditionally-based-on-component-state.html">
+            
+                <a href="react-change-inline-css-conditionally-based-on-component-state.html">
+            
+                    
+                    React: Change Inline CSS Conditionally Based on Component State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="react-use-arraymap-to-dynamically-render-elements.html">
+            
+                <a href="react-use-arraymap-to-dynamically-render-elements.html">
+            
+                    
+                    React: Use Array.map() to Dynamically Render Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="react-give-sibling-elements-a-unique-key-attribute.html">
+            
+                <a href="react-give-sibling-elements-a-unique-key-attribute.html">
+            
+                    
+                    React: Give Sibling Elements a Unique Key Attribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="react-use-arrayfilter-to-dynamically-filter-an-array.html">
+            
+                <a href="react-use-arrayfilter-to-dynamically-filter-an-array.html">
+            
+                    
+                    React: Use Array.filter() to Dynamically Filter an Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" data-path="react-render-react-on-the-server-with-rendertostring.html">
+            
+                <a href="react-render-react-on-the-server-with-rendertostring.html">
+            
+                    
+                    React: Render React on the Server with renderToString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="redux.html">
+            
+                <a href="redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="redux/redux-create-a-redux-store.html">
+            
+                <a href="redux/redux-create-a-redux-store.html">
+            
+                    
+                    Redux: Create a Redux Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >React: Manage Updates with Lifecycle Methods</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>React: Manage Updates with Lifecycle Methods
+Another lifecycle method is componentWillReceiveProps() which is called whenever a component is receiving new props. This method receives the new props as an argument, which is usually written as nextProps. You can use this argument and compare with this.props and perform actions before the component updates. For example, you may call setState() locally before the update is processed.</p>
+<p>Another method is componentDidUpdate(), and is called immediately after a component re-renders. Note that rendering and mounting are considered different things in the component lifecycle. When a page first loads, all components are mounted and this is where methods like componentWillMount() and componentDidMount() are called. After this, as state changes, components re-render themselves. The next challenge covers this in more detail.</p>
+<p>The child component Dialog receives message props from its parent, the Controller component. Write the componentWillReceiveProps() method in the Dialog component and have it log this.props and nextProps to the console. You&apos;ll need to pass nextProps as an argument to this method and although it&apos;s possible to name it anything, name it nextProps here.</p>
+<p>Next, add componentDidUpdate() in the Dialog component, and log a statement that says the component has updated. This method works similar to componentWillUpdate(), which is provided for you. Now click the button to change the message and watch your browser console. The order of the console statements show the order the methods are called.</p>
+<p>Note: You&apos;ll need to write the lifecycle methods as normal functions and not as arrow functions to pass the tests (there is also no advantage to writing lifecycle methods as arrow functions).</p>
+<pre><code>class Dialog extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  componentWillUpdate() {
+    console.log(&apos;Component is about to update...&apos;);
+  }
+  // change code below this line
+  componentWillReceiveProps(nextProps){
+    console.log(&apos;Component will receive props: &apos;+this.props.message+&quot;,next: &quot;+nextProps.message)
+  }
+
+  componentDidUpdate(){
+    console.log(&apos;Component will receive props: &apos;+this.props.message)
+  }
+
+  // change code above this line
+  render() {
+    return &lt;h1&gt;{this.props.message}&lt;/h1&gt;
+  }
+};
+
+class Controller extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: &apos;First Message&apos;
+    };
+    this.changeMessage = this.changeMessage.bind(this);
+  }
+  changeMessage() {
+    this.setState({
+      message: &apos;Second Message&apos;
+    });
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;button onClick={this.changeMessage}&gt;Update&lt;/button&gt;
+        &lt;Dialog message={this.state.message}/&gt;
+      &lt;/div&gt;
+    );
+  }
+};
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="react-add-event-listeners.html" class="navigation navigation-prev " aria-label="Previous page: React: Add Event Listeners">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="react-optimize-re-renders-with-shouldcomponentupdate.html" class="navigation navigation-next " aria-label="Next page: React: Optimize Re-Renders with shouldComponentUpdate">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"React: Manage Updates with Lifecycle Methods","level":"2.1.6","depth":2,"next":{"title":"React: Optimize Re-Renders with shouldComponentUpdate","level":"2.1.7","depth":2,"path":"react-optimize-re-renders-with-shouldcomponentupdate.md","ref":"react-optimize-re-renders-with-shouldcomponentupdate.md","articles":[]},"previous":{"title":"React: Add Event Listeners","level":"2.1.5","depth":2,"path":"react-add-event-listeners.md","ref":"react-add-event-listeners.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-manage-updates-with-lifecycle-methods.md","mtime":"2018-08-19T02:11:27.195Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-20T16:38:34.858Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
