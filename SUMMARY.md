@@ -26,7 +26,6 @@
   * [React: Give Sibling Elements a Unique Key Attribute](react-give-sibling-elements-a-unique-key-attribute.md)
   * [React: Use Array.filter\(\) to Dynamically Filter an Array](react-use-arrayfilter-to-dynamically-filter-an-array.md)
   * [React: Render React on the Server with renderToString](react-render-react-on-the-server-with-rendertostring.md)
-  
 * [Redux](redux.md)
-  
+  * [Redux: Create a Redux Store](redux/redux-create-a-redux-store.md)
 
