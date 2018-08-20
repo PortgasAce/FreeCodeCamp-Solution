@@ -1,0 +1,3 @@
+# FreeCodeCamp Solution
+
+在FreeCodeCamp上解题，有时候即使答案正确也不会通过，这是FreeCodeCamp的bug。为了方便其他人，这里记录了FreeCodeCamp的正确解题答案。
