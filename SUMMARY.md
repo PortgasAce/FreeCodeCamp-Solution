@@ -28,4 +28,5 @@
   * [React: Render React on the Server with renderToString](react-render-react-on-the-server-with-rendertostring.md)
 * [Redux](redux.md)
   * [Redux: Create a Redux Store](redux/redux-create-a-redux-store.md)
+  * [Redux: Get State from the Redux Store](redux/redux-get-state-from-the-redux-store.md)
 
