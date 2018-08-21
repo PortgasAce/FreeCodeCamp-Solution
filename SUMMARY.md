@@ -43,4 +43,5 @@
   * [Redux: Never Mutate State](redux/redux-never-mutate-state.md)
   * [Redux: Use the Spread Operator on Arrays](redux/redux-use-the-spread-operator-on-arrays.md)
   * [Redux: Remove an Item from an Array](redux/redux-remove-an-item-from-an-array.md)
+  * [Redux: Copy an Object with Object.assign](redux/redux-copy-an-object-with-objectassign.md)
 
