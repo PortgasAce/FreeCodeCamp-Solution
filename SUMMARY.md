@@ -35,4 +35,5 @@
   * [Redux: Handle an Action in the Store](redux/redux-handle-an-action-in-the-store.md)
   * [Redux: Use a Switch Statement to Handle Multiple Actions](redux/redux-use-a-switch-statement-to-handle-multiple-actions.md)
   * [Redux: Use const for Action Types](redux/redux-use-const-for-action-types.md)
+  * [Redux: Register a Store Listener](redux/redux-register-a-store-listener.md)
 
