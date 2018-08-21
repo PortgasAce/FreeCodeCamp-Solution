@@ -37,4 +37,5 @@
   * [Redux: Use const for Action Types](redux/redux-use-const-for-action-types.md)
   * [Redux: Register a Store Listener](redux/redux-register-a-store-listener.md)
   * [Redux: Combine Multiple Reducers](redux/redux-combine-multiple-reducers.md)
+  * [Redux: Send Action Data to the Store](redux/redux-send-action-data-to-the-store.md)
 
