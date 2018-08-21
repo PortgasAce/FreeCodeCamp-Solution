@@ -33,4 +33,5 @@
   * [Redux: Define an Action Creator](redux/redux-define-an-action-creator.md)
   * [Redux: Dispatch an Action Event](redux/redux-dispatch-an-action-event.md)
   * [Redux: Handle an Action in the Store](redux/redux-handle-an-action-in-the-store.md)
+  * [Redux: Use a Switch Statement to Handle Multiple Actions](redux/redux-use-a-switch-statement-to-handle-multiple-actions.md)
 
