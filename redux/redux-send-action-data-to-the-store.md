@@ -8,5 +8,31 @@ Next, finish writing the switch statement in the notesReducer(). You need to add
 
 The action is dispatched at the bottom of the code. Once you're finished, run the code and watch the console. That's all it takes to send action-specific data to the store and use it when you update store state.
 ```
+const ADD_NOTE = 'ADD_NOTE';
 
+const notesReducer = (state = 'Initial State', action) => {
+  switch(action.type) {
+    // change code below this line
+    case ADD_NOTE:
+      return action.text;
+    // change code above this line
+    default:
+      return state;
+  }
+};
+
+const addNoteText = (note) => {
+  // change code below this line
+  return {
+    type: ADD_NOTE,
+    text: note
+  }
+  // change code above this line
+};
+
+const store = Redux.createStore(notesReducer);
+
+console.log(store.getState());
+store.dispatch(addNoteText('Hello!'));
+console.log(store.getState());
 ```
