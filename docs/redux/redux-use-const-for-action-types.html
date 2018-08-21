@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Redux: Create a Redux Store · GitBook</title>
+        <title>Redux: Use const for Action Types · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="redux-get-state-from-the-redux-store.html" />
+    <link rel="next" href="redux-register-a-store-listener.html" />
     
     
-    <link rel="prev" href="../redux.html" />
+    <link rel="prev" href="redux-use-a-switch-statement-to-handle-multiple-actions.html" />
     
 
     </head>
@@ -391,7 +391,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.2.1" data-path="redux-create-a-redux-store.html">
+        <li class="chapter " data-level="2.2.1" data-path="redux-create-a-redux-store.html">
             
                 <a href="redux-create-a-redux-store.html">
             
@@ -482,7 +482,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.8" data-path="redux-use-const-for-action-types.html">
+        <li class="chapter active" data-level="2.2.8" data-path="redux-use-const-for-action-types.html">
             
                 <a href="redux-use-const-for-action-types.html">
             
@@ -647,7 +647,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Redux: Create a Redux Store</a>
+        <a href=".." >Redux: Use const for Action Types</a>
     </h1>
 </div>
 
@@ -662,21 +662,53 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>Redux: Create a Redux Store
-Redux is a state management framework that can be used with a number of different web technologies, including React.</p>
-<p>In Redux, there is a single state object that&apos;s responsible for the entire state of your application. This means if you had a React app with ten components, and each component had its own local state, the entire state of your app would be defined by a single state object housed in the Redux store. This is the first important principle to understand when learning Redux: the Redux store is the single source of truth when it comes to application state.</p>
-<p>This also means that any time any piece of your app wants to update state, it must do so through the Redux store. The unidirectional data flow makes it easier to track state management in your app.</p>
-<p>The Redux store is an object which holds and manages application state. There is a method called createStore() on the Redux object, which you use to create the Redux store. This method takes a reducer function as a required argument. The reducer function is covered in a later challenge, and is already defined for you in the code editor. It simply takes state as an argument and returns state.</p>
-<p>Declare a store variable and assign it to the createStore() method, passing in the reducer as an argument.</p>
-<p>Note: The code in the editor uses ES6 default argument syntax to initialize this state to hold a value of 5. If you&apos;re not familiar with default arguments, you can refer to the ES6 section in the Curriculum which covers this topic.</p>
-<pre><code>const reducer = (state = 5) =&gt; {
-  return state;
-}
+                                <p>Redux: Use const for Action Types
+A common practice when working with Redux is to assign action types as read-only constants, then reference these constants wherever they are used. You can refactor the code you&apos;re working with to write the action types as const declarations.</p>
+<p>Declare LOGIN and LOGOUT as const values and assign them to the strings &apos;LOGIN&apos; and &apos;LOGOUT&apos;, respectively. Then, edit the authReducer() and the action creators to reference these constants instead of string values.</p>
+<p>Note: It&apos;s generally a convention to write constants in all uppercase, and this is standard practice in Redux as well.</p>
+<pre><code>// change code below this line
+const LOGIN = &apos;LOGIN&apos;;
+const LOGOUT = &apos;LOGOUT&apos;;
+// change code above this line
 
-// Redux methods are available from a Redux object
-// For example: Redux.createStore()
-// Define the store here:
-const store = Redux.createStore(reducer);
+const defaultState = {
+  authenticated: false
+};
+
+const authReducer = (state = defaultState, action) =&gt; {
+
+  switch (action.type) {
+
+    case LOGIN:
+      return {
+        authenticated: true
+      }
+
+    case LOGOUT:
+      return {
+        authenticated: false
+      }
+
+    default:
+      return state;
+
+  }
+
+};
+
+const store = Redux.createStore(authReducer);
+
+const loginUser = () =&gt; {
+  return {
+    type: LOGIN
+  }
+};
+
+const logoutUser = () =&gt; {
+  return {
+    type: LOGOUT
+  }
+};
 </code></pre>
                                 
                                 </section>
@@ -704,12 +736,12 @@ const store = Redux.createStore(reducer);
 
             
                 
-                <a href="../redux.html" class="navigation navigation-prev " aria-label="Previous page: Redux">
+                <a href="redux-use-a-switch-statement-to-handle-multiple-actions.html" class="navigation navigation-prev " aria-label="Previous page: Redux: Use a Switch Statement to Handle Multiple Actions">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="redux-get-state-from-the-redux-store.html" class="navigation navigation-next " aria-label="Next page: Redux: Get State from the Redux Store">
+                <a href="redux-register-a-store-listener.html" class="navigation navigation-next " aria-label="Next page: Redux: Register a Store Listener">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -720,7 +752,7 @@ const store = Redux.createStore(reducer);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Redux: Create a Redux Store","level":"2.2.1","depth":2,"next":{"title":"Redux: Get State from the Redux Store","level":"2.2.2","depth":2,"path":"redux/redux-get-state-from-the-redux-store.md","ref":"redux/redux-get-state-from-the-redux-store.md","articles":[]},"previous":{"title":"Redux","level":"2.2","depth":1,"path":"redux.md","ref":"redux.md","articles":[{"title":"Redux: Create a Redux Store","level":"2.2.1","depth":2,"path":"redux/redux-create-a-redux-store.md","ref":"redux/redux-create-a-redux-store.md","articles":[]},{"title":"Redux: Get State from the Redux Store","level":"2.2.2","depth":2,"path":"redux/redux-get-state-from-the-redux-store.md","ref":"redux/redux-get-state-from-the-redux-store.md","articles":[]},{"title":"Redux: Define a Redux Action","level":"2.2.3","depth":2,"path":"redux/redux-define-a-redux-action.md","ref":"redux/redux-define-a-redux-action.md","articles":[]},{"title":"Redux: Define an Action Creator","level":"2.2.4","depth":2,"path":"redux/redux-define-an-action-creator.md","ref":"redux/redux-define-an-action-creator.md","articles":[]},{"title":"Redux: Dispatch an Action Event","level":"2.2.5","depth":2,"path":"redux/redux-dispatch-an-action-event.md","ref":"redux/redux-dispatch-an-action-event.md","articles":[]},{"title":"Redux: Handle an Action in the Store","level":"2.2.6","depth":2,"path":"redux/redux-handle-an-action-in-the-store.md","ref":"redux/redux-handle-an-action-in-the-store.md","articles":[]},{"title":"Redux: Use a Switch Statement to Handle Multiple Actions","level":"2.2.7","depth":2,"path":"redux/redux-use-a-switch-statement-to-handle-multiple-actions.md","ref":"redux/redux-use-a-switch-statement-to-handle-multiple-actions.md","articles":[]},{"title":"Redux: Use const for Action Types","level":"2.2.8","depth":2,"path":"redux/redux-use-const-for-action-types.md","ref":"redux/redux-use-const-for-action-types.md","articles":[]},{"title":"Redux: Register a Store Listener","level":"2.2.9","depth":2,"path":"redux/redux-register-a-store-listener.md","ref":"redux/redux-register-a-store-listener.md","articles":[]},{"title":"Redux: Combine Multiple Reducers","level":"2.2.10","depth":2,"path":"redux/redux-combine-multiple-reducers.md","ref":"redux/redux-combine-multiple-reducers.md","articles":[]},{"title":"Redux: Send Action Data to the Store","level":"2.2.11","depth":2,"path":"redux/redux-send-action-data-to-the-store.md","ref":"redux/redux-send-action-data-to-the-store.md","articles":[]},{"title":"Redux: Use Middleware to Handle Asynchronous Actions","level":"2.2.12","depth":2,"path":"redux/redux-use-middleware-to-handle-asynchronous-actions.md","ref":"redux/redux-use-middleware-to-handle-asynchronous-actions.md","articles":[]},{"title":"Redux: Write a Counter with Redux","level":"2.2.13","depth":2,"path":"redux/redux-write-a-counter-with-redux.md","ref":"redux/redux-write-a-counter-with-redux.md","articles":[]},{"title":"Redux: Never Mutate State","level":"2.2.14","depth":2,"path":"redux/redux-never-mutate-state.md","ref":"redux/redux-never-mutate-state.md","articles":[]},{"title":"Redux: Use the Spread Operator on Arrays","level":"2.2.15","depth":2,"path":"redux/redux-use-the-spread-operator-on-arrays.md","ref":"redux/redux-use-the-spread-operator-on-arrays.md","articles":[]},{"title":"Redux: Remove an Item from an Array","level":"2.2.16","depth":2,"path":"redux/redux-remove-an-item-from-an-array.md","ref":"redux/redux-remove-an-item-from-an-array.md","articles":[]},{"title":"Redux: Copy an Object with Object.assign","level":"2.2.17","depth":2,"path":"redux/redux-copy-an-object-with-objectassign.md","ref":"redux/redux-copy-an-object-with-objectassign.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux/redux-create-a-redux-store.md","mtime":"2018-08-20T17:41:53.962Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-21T13:33:01.794Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Redux: Use const for Action Types","level":"2.2.8","depth":2,"next":{"title":"Redux: Register a Store Listener","level":"2.2.9","depth":2,"path":"redux/redux-register-a-store-listener.md","ref":"redux/redux-register-a-store-listener.md","articles":[]},"previous":{"title":"Redux: Use a Switch Statement to Handle Multiple Actions","level":"2.2.7","depth":2,"path":"redux/redux-use-a-switch-statement-to-handle-multiple-actions.md","ref":"redux/redux-use-a-switch-statement-to-handle-multiple-actions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux/redux-use-const-for-action-types.md","mtime":"2018-08-21T05:00:13.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-21T13:33:01.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
