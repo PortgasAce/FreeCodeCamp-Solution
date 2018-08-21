@@ -41,4 +41,5 @@
   * [Redux: Use Middleware to Handle Asynchronous Actions](redux/redux-use-middleware-to-handle-asynchronous-actions.md)
   * [Redux: Write a Counter with Redux](redux/redux-write-a-counter-with-redux.md)
   * [Redux: Never Mutate State](redux/redux-never-mutate-state.md)
+  * [Redux: Use the Spread Operator on Arrays](redux/redux-use-the-spread-operator-on-arrays.md)
 
