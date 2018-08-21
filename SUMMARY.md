@@ -38,4 +38,5 @@
   * [Redux: Register a Store Listener](redux/redux-register-a-store-listener.md)
   * [Redux: Combine Multiple Reducers](redux/redux-combine-multiple-reducers.md)
   * [Redux: Send Action Data to the Store](redux/redux-send-action-data-to-the-store.md)
+  * [Redux: Use Middleware to Handle Asynchronous Actions](redux/redux-use-middleware-to-handle-asynchronous-actions.md)
 
