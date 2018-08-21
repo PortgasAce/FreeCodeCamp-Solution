@@ -42,4 +42,5 @@
   * [Redux: Write a Counter with Redux](redux/redux-write-a-counter-with-redux.md)
   * [Redux: Never Mutate State](redux/redux-never-mutate-state.md)
   * [Redux: Use the Spread Operator on Arrays](redux/redux-use-the-spread-operator-on-arrays.md)
+  * [Redux: Remove an Item from an Array](redux/redux-remove-an-item-from-an-array.md)
 
