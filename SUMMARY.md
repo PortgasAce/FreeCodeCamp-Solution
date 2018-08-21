@@ -31,4 +31,5 @@
   * [Redux: Get State from the Redux Store](redux/redux-get-state-from-the-redux-store.md)
   * [Redux: Define a Redux Action](redux/redux-define-a-redux-action.md)
   * [Redux: Define an Action Creator](redux/redux-define-an-action-creator.md)
+  * [Redux: Dispatch an Action Event](redux/redux-dispatch-an-action-event.md)
 
