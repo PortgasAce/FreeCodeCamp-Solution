@@ -45,5 +45,5 @@
   * [Redux: Remove an Item from an Array](redux/redux-remove-an-item-from-an-array.md)
   * [Redux: Copy an Object with Object.assign](redux/redux-copy-an-object-with-objectassign.md)
 * [React and Redux](react-and-redux.md)
-  
+  * Getting Started with React Redux
 
