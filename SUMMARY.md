@@ -46,4 +46,5 @@
   * [Redux: Copy an Object with Object.assign](redux/redux-copy-an-object-with-objectassign.md)
 * [React and Redux](react-and-redux.md)
   * [Getting Started with React Redux](react-and-redux/getting-started-with-react-redux.md)
+  * [React and Redux: Manage State Locally First](react-and-redux/react-and-redux-manage-state-locally-first.md)
 
