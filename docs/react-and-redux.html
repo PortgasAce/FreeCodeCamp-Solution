@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React: Optimize Re-Renders with shouldComponentUpdate · GitBook</title>
+        <title>React and Redux · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="react-introducing-inline-styles.html" />
+    <link rel="next" href="react-and-redux/getting-started-with-react-redux.html" />
     
     
-    <link rel="prev" href="react-manage-updates-with-lifecycle-methods.html" />
+    <link rel="prev" href="redux/redux-copy-an-object-with-objectassign.html" />
     
 
     </head>
@@ -203,7 +203,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.7" data-path="react-optimize-re-renders-with-shouldcomponentupdate.html">
+        <li class="chapter " data-level="2.1.7" data-path="react-optimize-re-renders-with-shouldcomponentupdate.html">
             
                 <a href="react-optimize-re-renders-with-shouldcomponentupdate.html">
             
@@ -617,7 +617,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="react-and-redux.html">
+        <li class="chapter active" data-level="2.3" data-path="react-and-redux.html">
             
                 <a href="react-and-redux.html">
             
@@ -796,7 +796,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >React: Optimize Re-Renders with shouldComponentUpdate</a>
+        <a href="." >React and Redux</a>
     </h1>
 </div>
 
@@ -811,54 +811,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>React: Optimize Re-Renders with shouldComponentUpdate
-So far, if any component receives new state or new props, it re-renders itself and all its children. This is usually okay. But React provides a lifecycle method you can call when child components receive new state or props, and declare specifically if the components should update or not. The method is shouldComponentUpdate(), and it takes nextProps and nextState as parameters.</p>
-<p>This method is a useful way to optimize performance. For example, the default behavior is that your component re-renders when it receives new props, even if the props haven&apos;t changed. You can use shouldComponentUpdate() to prevent this by comparing the props. The method must return a boolean value that tells React whether or not to update the component. You can compare the current props (this.props) to the next props (nextProps) to determine if you need to update or not, and return true or false accordingly.</p>
-<p>The shouldComponentUpdate() method is added in a component called OnlyEvens. Currently, this method returns true so OnlyEvens re-renders every time it receives new props. Modify the method so OnlyEvens updates only if the value of its new props is even. Click the Add button and watch the order of events in your browser&apos;s console as the other lifecycle hooks are triggered.</p>
-<pre><code>class OnlyEvens extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log(&apos;Should I update?&apos;);
-     // change code below this line
-    return nextProps.value%2 !== 1;
-     // change code above this line
-  }
-  componentWillReceiveProps(nextProps) {
-    console.log(&apos;Receiving new props...&apos;);
-  }
-  componentDidUpdate() {
-    console.log(&apos;Component re-rendered.&apos;);
-  }
-  render() {
-    return &lt;h1&gt;{this.props.value}&lt;/h1&gt;
-  }
-};
+                                <p>Introduction to the React and Redux Challenges
+This series of challenges introduces how to use Redux with React.</p>
+<p>In a React Redux app, you create a single Redux store that manages the state of your entire app. Your React components subscribe to only the pieces of data in the store that are relevant to their role. Then, you dispatch actions directly from React components, which then trigger store updates.</p>
 
-class Controller extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 0
-    };
-    this.addValue = this.addValue.bind(this);
-  }
-  addValue() {
-    this.setState({
-      value: this.state.value + 1
-    });
-  }
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;button onClick={this.addValue}&gt;Add&lt;/button&gt;
-        &lt;OnlyEvens value={this.state.value}/&gt;
-      &lt;/div&gt;
-    );
-  }
-};
-</code></pre>
                                 
                                 </section>
                             
@@ -885,12 +841,12 @@ class Controller extends React.Component {
 
             
                 
-                <a href="react-manage-updates-with-lifecycle-methods.html" class="navigation navigation-prev " aria-label="Previous page: React: Manage Updates with Lifecycle Methods">
+                <a href="redux/redux-copy-an-object-with-objectassign.html" class="navigation navigation-prev " aria-label="Previous page: Redux: Copy an Object with Object.assign">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="react-introducing-inline-styles.html" class="navigation navigation-next " aria-label="Next page: React: Introducing Inline Styles">
+                <a href="react-and-redux/getting-started-with-react-redux.html" class="navigation navigation-next " aria-label="Next page: Getting Started with React Redux">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -901,7 +857,7 @@ class Controller extends React.Component {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React: Optimize Re-Renders with shouldComponentUpdate","level":"2.1.7","depth":2,"next":{"title":"React: Introducing Inline Styles","level":"2.1.8","depth":2,"path":"react-introducing-inline-styles.md","ref":"react-introducing-inline-styles.md","articles":[]},"previous":{"title":"React: Manage Updates with Lifecycle Methods","level":"2.1.6","depth":2,"path":"react-manage-updates-with-lifecycle-methods.md","ref":"react-manage-updates-with-lifecycle-methods.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-optimize-re-renders-with-shouldcomponentupdate.md","mtime":"2018-08-19T02:41:56.947Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-23T17:54:26.324Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React and Redux","level":"2.3","depth":1,"next":{"title":"Getting Started with React Redux","level":"2.3.1","depth":2,"path":"react-and-redux/getting-started-with-react-redux.md","ref":"react-and-redux/getting-started-with-react-redux.md","articles":[]},"previous":{"title":"Redux: Copy an Object with Object.assign","level":"2.2.17","depth":2,"path":"redux/redux-copy-an-object-with-objectassign.md","ref":"redux/redux-copy-an-object-with-objectassign.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-and-redux.md","mtime":"2018-08-22T16:47:37.037Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-23T17:54:26.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
