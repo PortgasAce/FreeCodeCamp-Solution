@@ -27,5 +27,4 @@ let messageReducer =(state = [],action) =>{
 }
 
 let store = Redux.createStore(messageReducer);
-
 ```
