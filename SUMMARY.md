@@ -54,4 +54,5 @@
   * [React and Redux: Connect Redux to React](react-and-redux/react-and-redux-connect-redux-to-react.md)
   * [React and Redux: Connect Redux to the Messages App](react-and-redux/react-and-redux-connect-redux-to-the-messages-app.md)
   * [React and Redux: Extract Local State into Redux](react-and-redux/react-and-redux-extract-local-state-into-redux.md)
+  * [React and Redux: Moving Forward From Here](react-and-redux/react-and-redux-moving-forward-from-here.md)
 
