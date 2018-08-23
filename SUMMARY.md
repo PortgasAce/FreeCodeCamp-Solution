@@ -53,4 +53,5 @@
   * [React and Redux: Map Dispatch to Props](react-and-redux/react-and-redux-map-dispatch-to-props.md)
   * [React and Redux: Connect Redux to React](react-and-redux/react-and-redux-connect-redux-to-react.md)
   * [React and Redux: Connect Redux to the Messages App](react-and-redux/react-and-redux-connect-redux-to-the-messages-app.md)
+  * [React and Redux: Extract Local State into Redux](react-and-redux/react-and-redux-extract-local-state-into-redux.md)
 
