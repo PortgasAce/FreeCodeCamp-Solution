@@ -7,5 +7,25 @@ First, define an action type 'ADD' and set it to a const ADD. Next, define an ac
 Then create a reducer called messageReducer() that handles the state for the messages. The initial state should equal an empty array. This reducer should add a message to the array of messages held in state, or return the current state. Finally, create your Redux store and pass it the reducer.
 
 ```
+// define ADD, addMessage(), messageReducer(), and store here:
+const ADD = 'ADD'
+
+let addMessage =(msg)=> {
+    return {
+        type: ADD,
+        message: msg
+    };
+}
+
+let messageReducer =(state = [],action) =>{
+    switch(action.type){
+        case ADD:
+        return [...state,action.message];
+        default:
+        return state;
+    }
+}
+
+let store = Redux.createStore(messageReducer);
 
 ```
