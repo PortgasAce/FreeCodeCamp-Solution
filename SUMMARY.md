@@ -50,4 +50,5 @@
   * [React and Redux: Extract State Logic to Redux](react-and-redux/react-and-redux-extract-state-logic-to-redux.md)
   * [React and Redux: Use Provider to Connect Redux to React](react-and-redux/react-and-redux-use-provider-to-connect-redux-to-react.md)
   * [React and Redux: Map State to Props](react-and-redux/react-and-redux-map-state-to-props.md)
+  * [React and Redux: Map Dispatch to Props](react-and-redux/react-and-redux-map-dispatch-to-props.md)
 
