@@ -48,4 +48,5 @@
   * [Getting Started with React Redux](react-and-redux/getting-started-with-react-redux.md)
   * [React and Redux: Manage State Locally First](react-and-redux/react-and-redux-manage-state-locally-first.md)
   * [React and Redux: Extract State Logic to Redux](react-and-redux/react-and-redux-extract-state-logic-to-redux.md)
+  * [React and Redux: Use Provider to Connect Redux to React](react-and-redux/react-and-redux-use-provider-to-connect-redux-to-react.md)
 
