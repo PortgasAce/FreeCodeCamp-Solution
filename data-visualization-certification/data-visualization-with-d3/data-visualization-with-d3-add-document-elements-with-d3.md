@@ -19,7 +19,7 @@ d3.select("ul")
   .append("li")
   .text("Very important item");
 D3 allows you to chain several methods together with periods to perform a number of actions in a row.
-
+ 
 
 Use the select method to select the body tag in the document. Then append an h1 tag to it, and add the text "Learning D3" into the h1 element.
 ```
