@@ -56,3 +56,7 @@
   * [React and Redux: Extract Local State into Redux](react-and-redux/react-and-redux-extract-local-state-into-redux.md)
   * [React and Redux: Moving Forward From Here](react-and-redux/react-and-redux-moving-forward-from-here.md)
 
+## Data Visualization Certification
+
+* [Data Visualization with D3](data-visualization-certification/data-visualization-with-d3.md)
+
