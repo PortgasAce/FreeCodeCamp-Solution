@@ -90,4 +90,5 @@
   * [Data Visualization with D3: Add Axes to a Visualization](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.md)
 * [Introduction to the JSON APIs and AJAX Challenges](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges.md)
   * [JSON APIs and Ajax: Handle Click Events with JavaScript using the onclick property](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-handle-click-events-with-javascript-using-the-onclick-property.md)
+  * [JSON APIs and Ajax: Change Text with click Events](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-change-text-with-click-events.md)
 
