@@ -16,5 +16,19 @@ By default, a scale uses the identity relationship. The value of the input is th
 
 Change the scale variable to create a linear scale. Then set the output variable to the scale called with an input argument of 50.
 ```
-
+<body>
+  <script>
+    // Add your code below this line
+    
+    const scale = d3.scaleLinear(); // Create the scale here
+    const output = scale(50); // Call the scale with an argument here
+    
+    // Add your code above this line
+    
+    d3.select("body")
+      .append("h2")
+      .text(output);
+  
+  </script>
+</body>
 ```
