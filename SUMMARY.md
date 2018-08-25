@@ -77,4 +77,5 @@
   * [Data Visualization with D3: Change the Color of an SVG Element](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-color-of-an-svg-element.md)
   * [Data Visualization with D3: Add Labels to D3 Elements](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-d3-elements.md)
   * [Data Visualization with D3: Style D3 Labels](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-style-d3-labels.md)
+  * [Data Visualization with D3: Add a Hover Effect to a D3 Element](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-hover-effect-to-a-d3-element.md)
 
