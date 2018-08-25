@@ -14,5 +14,19 @@ Using the current example as context, the first h2 element is bound to 12, the s
 
 Change the text() method so that each h2 element displays the corresponding value from the dataset array with a single space and "USD". For example, the first heading should be "12 USD".
 ```
-
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+    
+    d3.select("body").selectAll("h2")
+      .data(dataset)
+      .enter()
+      .append("h2")
+      // Add your code below this line
+      
+      .text((data)=>data+" USD");
+      
+      // Add your code above this line
+  </script>
+</body>
 ```
