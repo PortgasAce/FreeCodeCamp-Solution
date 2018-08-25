@@ -88,4 +88,5 @@
   * [Data Visualization with D3: Use Dynamic Scales](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.md)
   * [Data Visualization with D3: Use a Pre-Defined Scale to Place Elements](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.md)
   * [Data Visualization with D3: Add Axes to a Visualization](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.md)
+* [Introduction to the JSON APIs and AJAX Challenges](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges.md)
 
