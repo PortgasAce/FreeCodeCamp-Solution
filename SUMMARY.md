@@ -87,4 +87,5 @@
   * [Data Visualization with D3: Use the d3.max and d3.min Functions to Find Minimum and Maximum Values in a Dataset](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.md)
   * [Data Visualization with D3: Use Dynamic Scales](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.md)
   * [Data Visualization with D3: Use a Pre-Defined Scale to Place Elements](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.md)
+  * [Data Visualization with D3: Add Axes to a Visualization](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.md)
 
