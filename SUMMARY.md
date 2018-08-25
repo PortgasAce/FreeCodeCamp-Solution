@@ -84,4 +84,5 @@
   * [Data Visualization with D3: Add Labels to Scatter Plot Circles](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.md)
   * [Data Visualization with D3: Create a Linear Scale with D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.md)
   * [Data Visualization with D3: Set a Domain and a Range on a Scale](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.md)
+  * [Data Visualization with D3: Use the d3.max and d3.min Functions to Find Minimum and Maximum Values in a Dataset](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.md)
 
