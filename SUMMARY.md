@@ -64,4 +64,5 @@
   * [Data Visualization with D3: Work with Data in D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-data-in-d3.md)
   * [Data Visualization with D3: Work with Dynamic Data in D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-dynamic-data-in-d3.md)
   * [Data Visualization with D3: Add Inline Styling to Elements](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-inline-styling-to-elements.md)
+  * [Data Visualization with D3: Change Styles Based on Data](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-styles-based-on-data.md)
 
