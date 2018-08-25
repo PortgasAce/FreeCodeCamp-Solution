@@ -1,0 +1,12 @@
+Data Visualization with D3: Add Labels to Scatter Plot Circles
+You can add text to create labels for the points in a scatter plot.
+
+The goal is to display the comma-separated values for the first (x) and second (y) fields of each item in dataset.
+
+The text nodes need x and y attributes to position it on the SVG canvas. In this challenge, the y value (which determines height) can use the same value that the circle uses for its cy attribute. The x value can be slightly larger than the cx value of the circle, so the label is visible. This will push the label to the right of the plotted point.
+
+
+Label each point on the scatter plot using the text elements. The text of the label should be the two values separated by a comma and a space. For example, the label for the first point is "34, 78". Set the x attribute so it's 5 units more than the value you used for the cx attribute on the circle. Set the y attribute the same way that's used for the cy value on the circle.
+```
+
+```

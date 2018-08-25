@@ -81,4 +81,5 @@
   * [Data Visualization with D3: Add a Tooltip to a D3 Element](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-tooltip-to-a-d3-element.md)
   * [Data Visualization with D3: Create a Scatterplot with SVG Circles](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-scatterplot-with-svg-circles.md)
   * [Data Visualization with D3: Add Attributes to the Circle Elements](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.md)
+  * [Data Visualization with D3: Add Labels to Scatter Plot Circles](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.md)
 
