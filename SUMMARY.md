@@ -68,4 +68,5 @@
   * [Data Visualization with D3: Add Classes with D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-classes-with-d3.md)
   * [Data Visualization with D3: Update the Height of an Element Dynamically](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-update-the-height-of-an-element-dynamically.md)
   * [Data Visualization with D3: Change the Presentation of a Bar Chart](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.md)
+  * [Data Visualization with D3: Learn About SVG in D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.md)
 
