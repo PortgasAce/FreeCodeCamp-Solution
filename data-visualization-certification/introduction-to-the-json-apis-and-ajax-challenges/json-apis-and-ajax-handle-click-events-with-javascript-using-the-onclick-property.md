@@ -9,3 +9,6 @@ You can implement event handlers that go inside of the DOMContentLoaded function
 document.getElementById('getMessage').onclick=function(){};
 
 Add a click event handler inside of the DOMContentLoaded function for the element with id of getMessage.
+```
+
+```
