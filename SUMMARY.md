@@ -70,4 +70,5 @@
   * [Data Visualization with D3: Change the Presentation of a Bar Chart](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.md)
   * [Data Visualization with D3: Learn About SVG in D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.md)
   * [Data Visualization with D3: Display Shapes with SVG](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-display-shapes-with-svg.md)
+  * [Data Visualization with D3: Create a Bar for Each Data Point in the Set](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.md)
 
