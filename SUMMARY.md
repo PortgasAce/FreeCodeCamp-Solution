@@ -83,4 +83,5 @@
   * [Data Visualization with D3: Add Attributes to the Circle Elements](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.md)
   * [Data Visualization with D3: Add Labels to Scatter Plot Circles](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.md)
   * [Data Visualization with D3: Create a Linear Scale with D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.md)
+  * [Data Visualization with D3: Set a Domain and a Range on a Scale](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.md)
 
