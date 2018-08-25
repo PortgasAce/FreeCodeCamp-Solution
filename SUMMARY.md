@@ -60,4 +60,5 @@
 
 * [Data Visualization with D3](data-visualization-certification/data-visualization-with-d3.md)
   * [Data Visualization with D3: Add Document Elements with D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-document-elements-with-d3.md)
+  * [Data Visualization with D3: Select a Group of Elements with D3](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-select-a-group-of-elements-with-d3.md)
 
