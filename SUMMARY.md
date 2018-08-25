@@ -73,4 +73,5 @@
   * [Data Visualization with D3: Create a Bar for Each Data Point in the Set](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.md)
   * [Data Visualization with D3: Dynamically Set the Coordinates for Each Bar](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-set-the-coordinates-for-each-bar.md)
   * [Data Visualization with D3: Dynamically Change the Height of Each Bar](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-change-the-height-of-each-bar.md)
+  * [Data Visualization with D3: Invert SVG Elements](data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-invert-svg-elements.md)
 
