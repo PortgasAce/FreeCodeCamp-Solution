@@ -8,5 +8,18 @@ Like the select() method, selectAll() supports method chaining, and you can use 
 
 Select all of the li tags in the document, and change their text to "list item" by chaining the .text() method.
 ```
-
+<body>
+  <ul>
+    <li>Example</li>
+    <li>Example</li>
+    <li>Example</li>
+  </ul>
+  <script>
+    // Add your code below this line
+    d3.selectAll("li").text("list item");
+    
+    
+    // Add your code above this line
+  </script>
+</body>
 ```
