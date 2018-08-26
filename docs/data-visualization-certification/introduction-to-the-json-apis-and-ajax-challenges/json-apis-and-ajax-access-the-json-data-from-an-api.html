@@ -1,0 +1,1499 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JSON APIs and Ajax: Access the JSON Data from an API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="json-apis-and-ajax-convert-json-data-to-html.html" />
+    
+    
+    <link rel="prev" href="json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">FreeCodeCamp Solution</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Front End Libraries Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../react.html">
+            
+                <a href="../../react.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../react-pass-state-as-props-to-child-components.html">
+            
+                <a href="../../react-pass-state-as-props-to-child-components.html">
+            
+                    
+                    React: Pass State as Props to Child Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../react-pass-a-callback-as-props.html">
+            
+                <a href="../../react-pass-a-callback-as-props.html">
+            
+                    
+                    React: Pass a Callback as Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../react-use-the-lifecycle-method-componentwillmount.html">
+            
+                <a href="../../react-use-the-lifecycle-method-componentwillmount.html">
+            
+                    
+                    React: Use the Lifecycle Method componentWillMount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../react-use-the-lifecycle-method-componentdidmount.html">
+            
+                <a href="../../react-use-the-lifecycle-method-componentdidmount.html">
+            
+                    
+                    React: Use the Lifecycle Method componentDidMount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../react-add-event-listeners.html">
+            
+                <a href="../../react-add-event-listeners.html">
+            
+                    
+                    React: Add Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../react-manage-updates-with-lifecycle-methods.html">
+            
+                <a href="../../react-manage-updates-with-lifecycle-methods.html">
+            
+                    
+                    React: Manage Updates with Lifecycle Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../react-optimize-re-renders-with-shouldcomponentupdate.html">
+            
+                <a href="../../react-optimize-re-renders-with-shouldcomponentupdate.html">
+            
+                    
+                    React: Optimize Re-Renders with shouldComponentUpdate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../react-introducing-inline-styles.html">
+            
+                <a href="../../react-introducing-inline-styles.html">
+            
+                    
+                    React: Introducing Inline Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../react-add-inline-styles-in-react.html">
+            
+                <a href="../../react-add-inline-styles-in-react.html">
+            
+                    
+                    React: Add Inline Styles in React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../react-use-advanced-javascript-in-react-render-method.html">
+            
+                <a href="../../react-use-advanced-javascript-in-react-render-method.html">
+            
+                    
+                    React: Use Advanced JavaScript in React Render Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../react-render-with-an-ifelse-condition.html">
+            
+                <a href="../../react-render-with-an-ifelse-condition.html">
+            
+                    
+                    React: Render with an If/Else Condition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../react-use-andand-for-a-more-concise-conditional.html">
+            
+                <a href="../../react-use-andand-for-a-more-concise-conditional.html">
+            
+                    
+                    React: Use && for a More Concise Conditional
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../../react-use-a-ternary-expression-for-conditional-rendering.html">
+            
+                <a href="../../react-use-a-ternary-expression-for-conditional-rendering.html">
+            
+                    
+                    React: Use a Ternary Expression for Conditional Rendering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../../react-render-conditionally-from-props.html">
+            
+                <a href="../../react-render-conditionally-from-props.html">
+            
+                    
+                    React: Render Conditionally from Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../../react-change-inline-css-conditionally-based-on-component-state.html">
+            
+                <a href="../../react-change-inline-css-conditionally-based-on-component-state.html">
+            
+                    
+                    React: Change Inline CSS Conditionally Based on Component State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../../react-use-arraymap-to-dynamically-render-elements.html">
+            
+                <a href="../../react-use-arraymap-to-dynamically-render-elements.html">
+            
+                    
+                    React: Use Array.map() to Dynamically Render Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../../react-give-sibling-elements-a-unique-key-attribute.html">
+            
+                <a href="../../react-give-sibling-elements-a-unique-key-attribute.html">
+            
+                    
+                    React: Give Sibling Elements a Unique Key Attribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../../react-use-arrayfilter-to-dynamically-filter-an-array.html">
+            
+                <a href="../../react-use-arrayfilter-to-dynamically-filter-an-array.html">
+            
+                    
+                    React: Use Array.filter() to Dynamically Filter an Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" data-path="../../react-render-react-on-the-server-with-rendertostring.html">
+            
+                <a href="../../react-render-react-on-the-server-with-rendertostring.html">
+            
+                    
+                    React: Render React on the Server with renderToString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../redux.html">
+            
+                <a href="../../redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../redux/redux-create-a-redux-store.html">
+            
+                <a href="../../redux/redux-create-a-redux-store.html">
+            
+                    
+                    Redux: Create a Redux Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../redux/redux-get-state-from-the-redux-store.html">
+            
+                <a href="../../redux/redux-get-state-from-the-redux-store.html">
+            
+                    
+                    Redux: Get State from the Redux Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../redux/redux-define-a-redux-action.html">
+            
+                <a href="../../redux/redux-define-a-redux-action.html">
+            
+                    
+                    Redux: Define a Redux Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../redux/redux-define-an-action-creator.html">
+            
+                <a href="../../redux/redux-define-an-action-creator.html">
+            
+                    
+                    Redux: Define an Action Creator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../redux/redux-dispatch-an-action-event.html">
+            
+                <a href="../../redux/redux-dispatch-an-action-event.html">
+            
+                    
+                    Redux: Dispatch an Action Event
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../redux/redux-handle-an-action-in-the-store.html">
+            
+                <a href="../../redux/redux-handle-an-action-in-the-store.html">
+            
+                    
+                    Redux: Handle an Action in the Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../redux/redux-use-a-switch-statement-to-handle-multiple-actions.html">
+            
+                <a href="../../redux/redux-use-a-switch-statement-to-handle-multiple-actions.html">
+            
+                    
+                    Redux: Use a Switch Statement to Handle Multiple Actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../redux/redux-use-const-for-action-types.html">
+            
+                <a href="../../redux/redux-use-const-for-action-types.html">
+            
+                    
+                    Redux: Use const for Action Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../../redux/redux-register-a-store-listener.html">
+            
+                <a href="../../redux/redux-register-a-store-listener.html">
+            
+                    
+                    Redux: Register a Store Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../../redux/redux-combine-multiple-reducers.html">
+            
+                <a href="../../redux/redux-combine-multiple-reducers.html">
+            
+                    
+                    Redux: Combine Multiple Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.11" data-path="../../redux/redux-send-action-data-to-the-store.html">
+            
+                <a href="../../redux/redux-send-action-data-to-the-store.html">
+            
+                    
+                    Redux: Send Action Data to the Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.12" data-path="../../redux/redux-use-middleware-to-handle-asynchronous-actions.html">
+            
+                <a href="../../redux/redux-use-middleware-to-handle-asynchronous-actions.html">
+            
+                    
+                    Redux: Use Middleware to Handle Asynchronous Actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.13" data-path="../../redux/redux-write-a-counter-with-redux.html">
+            
+                <a href="../../redux/redux-write-a-counter-with-redux.html">
+            
+                    
+                    Redux: Write a Counter with Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.14" data-path="../../redux/redux-never-mutate-state.html">
+            
+                <a href="../../redux/redux-never-mutate-state.html">
+            
+                    
+                    Redux: Never Mutate State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.15" data-path="../../redux/redux-use-the-spread-operator-on-arrays.html">
+            
+                <a href="../../redux/redux-use-the-spread-operator-on-arrays.html">
+            
+                    
+                    Redux: Use the Spread Operator on Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.16" data-path="../../redux/redux-remove-an-item-from-an-array.html">
+            
+                <a href="../../redux/redux-remove-an-item-from-an-array.html">
+            
+                    
+                    Redux: Remove an Item from an Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.17" data-path="../../redux/redux-copy-an-object-with-objectassign.html">
+            
+                <a href="../../redux/redux-copy-an-object-with-objectassign.html">
+            
+                    
+                    Redux: Copy an Object with Object.assign
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../react-and-redux.html">
+            
+                <a href="../../react-and-redux.html">
+            
+                    
+                    React and Redux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../react-and-redux/getting-started-with-react-redux.html">
+            
+                <a href="../../react-and-redux/getting-started-with-react-redux.html">
+            
+                    
+                    Getting Started with React Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../react-and-redux/react-and-redux-manage-state-locally-first.html">
+            
+                <a href="../../react-and-redux/react-and-redux-manage-state-locally-first.html">
+            
+                    
+                    React and Redux: Manage State Locally First
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../react-and-redux/react-and-redux-extract-state-logic-to-redux.html">
+            
+                <a href="../../react-and-redux/react-and-redux-extract-state-logic-to-redux.html">
+            
+                    
+                    React and Redux: Extract State Logic to Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../../react-and-redux/react-and-redux-use-provider-to-connect-redux-to-react.html">
+            
+                <a href="../../react-and-redux/react-and-redux-use-provider-to-connect-redux-to-react.html">
+            
+                    
+                    React and Redux: Use Provider to Connect Redux to React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../../react-and-redux/react-and-redux-map-state-to-props.html">
+            
+                <a href="../../react-and-redux/react-and-redux-map-state-to-props.html">
+            
+                    
+                    React and Redux: Map State to Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../../react-and-redux/react-and-redux-map-dispatch-to-props.html">
+            
+                <a href="../../react-and-redux/react-and-redux-map-dispatch-to-props.html">
+            
+                    
+                    React and Redux: Map Dispatch to Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../../react-and-redux/react-and-redux-connect-redux-to-react.html">
+            
+                <a href="../../react-and-redux/react-and-redux-connect-redux-to-react.html">
+            
+                    
+                    React and Redux: Connect Redux to React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../../react-and-redux/react-and-redux-connect-redux-to-the-messages-app.html">
+            
+                <a href="../../react-and-redux/react-and-redux-connect-redux-to-the-messages-app.html">
+            
+                    
+                    React and Redux: Connect Redux to the Messages App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../../react-and-redux/react-and-redux-extract-local-state-into-redux.html">
+            
+                <a href="../../react-and-redux/react-and-redux-extract-local-state-into-redux.html">
+            
+                    
+                    React and Redux: Extract Local State into Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../../react-and-redux/react-and-redux-moving-forward-from-here.html">
+            
+                <a href="../../react-and-redux/react-and-redux-moving-forward-from-here.html">
+            
+                    
+                    React and Redux: Moving Forward From Here
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Data Visualization Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../data-visualization-with-d3.html">
+            
+                <a href="../data-visualization-with-d3.html">
+            
+                    
+                    Data Visualization with D3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-document-elements-with-d3.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-document-elements-with-d3.html">
+            
+                    
+                    Data Visualization with D3: Add Document Elements with D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../data-visualization-with-d3/data-visualization-with-d3-select-a-group-of-elements-with-d3.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-select-a-group-of-elements-with-d3.html">
+            
+                    
+                    Data Visualization with D3: Select a Group of Elements with D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../data-visualization-with-d3/data-visualization-with-d3-work-with-data-in-d3.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-work-with-data-in-d3.html">
+            
+                    
+                    Data Visualization with D3: Work with Data in D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../data-visualization-with-d3/data-visualization-with-d3-work-with-dynamic-data-in-d3.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-work-with-dynamic-data-in-d3.html">
+            
+                    
+                    Data Visualization with D3: Work with Dynamic Data in D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-inline-styling-to-elements.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-inline-styling-to-elements.html">
+            
+                    
+                    Data Visualization with D3: Add Inline Styling to Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../data-visualization-with-d3/data-visualization-with-d3-change-styles-based-on-data.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-change-styles-based-on-data.html">
+            
+                    
+                    Data Visualization with D3: Change Styles Based on Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-classes-with-d3.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-classes-with-d3.html">
+            
+                    
+                    Data Visualization with D3: Add Classes with D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../data-visualization-with-d3/data-visualization-with-d3-update-the-height-of-an-element-dynamically.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-update-the-height-of-an-element-dynamically.html">
+            
+                    
+                    Data Visualization with D3: Update the Height of an Element Dynamically
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.html">
+            
+                    
+                    Data Visualization with D3: Change the Presentation of a Bar Chart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.html">
+            
+                    
+                    Data Visualization with D3: Learn About SVG in D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../data-visualization-with-d3/data-visualization-with-d3-display-shapes-with-svg.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-display-shapes-with-svg.html">
+            
+                    
+                    Data Visualization with D3: Display Shapes with SVG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.html">
+            
+                    
+                    Data Visualization with D3: Create a Bar for Each Data Point in the Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../data-visualization-with-d3/data-visualization-with-d3-dynamically-set-the-coordinates-for-each-bar.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-dynamically-set-the-coordinates-for-each-bar.html">
+            
+                    
+                    Data Visualization with D3: Dynamically Set the Coordinates for Each Bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../data-visualization-with-d3/data-visualization-with-d3-dynamically-change-the-height-of-each-bar.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-dynamically-change-the-height-of-each-bar.html">
+            
+                    
+                    Data Visualization with D3: Dynamically Change the Height of Each Bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../data-visualization-with-d3/data-visualization-with-d3-invert-svg-elements.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-invert-svg-elements.html">
+            
+                    
+                    Data Visualization with D3: Invert SVG Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../data-visualization-with-d3/data-visualization-with-d3-change-the-color-of-an-svg-element.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-change-the-color-of-an-svg-element.html">
+            
+                    
+                    Data Visualization with D3: Change the Color of an SVG Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-labels-to-d3-elements.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-labels-to-d3-elements.html">
+            
+                    
+                    Data Visualization with D3: Add Labels to D3 Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../data-visualization-with-d3/data-visualization-with-d3-style-d3-labels.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-style-d3-labels.html">
+            
+                    
+                    Data Visualization with D3: Style D3 Labels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-a-hover-effect-to-a-d3-element.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-a-hover-effect-to-a-d3-element.html">
+            
+                    
+                    Data Visualization with D3: Add a Hover Effect to a D3 Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-a-tooltip-to-a-d3-element.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-a-tooltip-to-a-d3-element.html">
+            
+                    
+                    Data Visualization with D3: Add a Tooltip to a D3 Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../data-visualization-with-d3/data-visualization-with-d3-create-a-scatterplot-with-svg-circles.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-create-a-scatterplot-with-svg-circles.html">
+            
+                    
+                    Data Visualization with D3: Create a Scatterplot with SVG Circles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.html">
+            
+                    
+                    Data Visualization with D3: Add Attributes to the Circle Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.html">
+            
+                    
+                    Data Visualization with D3: Add Labels to Scatter Plot Circles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.24" data-path="../data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.html">
+            
+                    
+                    Data Visualization with D3: Create a Linear Scale with D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.25" data-path="../data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.html">
+            
+                    
+                    Data Visualization with D3: Set a Domain and a Range on a Scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.26" data-path="../data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.html">
+            
+                    
+                    Data Visualization with D3: Use the d3.max and d3.min Functions to Find Minimum and Maximum Values in a Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.27" data-path="../data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.html">
+            
+                    
+                    Data Visualization with D3: Use Dynamic Scales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.28" data-path="../data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.html">
+            
+                    
+                    Data Visualization with D3: Use a Pre-Defined Scale to Place Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.29" data-path="../data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.html">
+            
+                <a href="../data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.html">
+            
+                    
+                    Data Visualization with D3: Add Axes to a Visualization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../introduction-to-the-json-apis-and-ajax-challenges.html">
+            
+                <a href="../introduction-to-the-json-apis-and-ajax-challenges.html">
+            
+                    
+                    Introduction to the JSON APIs and AJAX Challenges
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="json-apis-and-ajax-handle-click-events-with-javascript-using-the-onclick-property.html">
+            
+                <a href="json-apis-and-ajax-handle-click-events-with-javascript-using-the-onclick-property.html">
+            
+                    
+                    JSON APIs and Ajax: Handle Click Events with JavaScript using the onclick property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="json-apis-and-ajax-change-text-with-click-events.html">
+            
+                <a href="json-apis-and-ajax-change-text-with-click-events.html">
+            
+                    
+                    JSON APIs and Ajax: Change Text with click Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.html">
+            
+                <a href="json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.html">
+            
+                    
+                    JSON APIs and Ajax: Get JSON with the JavaScript XMLHttpRequest Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2.4" data-path="json-apis-and-ajax-access-the-json-data-from-an-api.html">
+            
+                <a href="json-apis-and-ajax-access-the-json-data-from-an-api.html">
+            
+                    
+                    JSON APIs and Ajax: Access the JSON Data from an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="json-apis-and-ajax-convert-json-data-to-html.html">
+            
+                <a href="json-apis-and-ajax-convert-json-data-to-html.html">
+            
+                    
+                    JSON APIs and Ajax: Convert JSON Data to HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="json-apis-and-ajax-render-images-from-data-sources.html">
+            
+                <a href="json-apis-and-ajax-render-images-from-data-sources.html">
+            
+                    
+                    JSON APIs and Ajax: Render Images from Data Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="json-apis-and-ajax-pre-filter-json-to-get-the-data-you-need.html">
+            
+                <a href="json-apis-and-ajax-pre-filter-json-to-get-the-data-you-need.html">
+            
+                    
+                    JSON APIs and Ajax: Pre-filter JSON to Get the Data You Need
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8" data-path="json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.html">
+            
+                <a href="json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.html">
+            
+                    
+                    JSON APIs and Ajax: Get Geolocation Data to Find A User's GPS Coordinates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9" data-path="json-apis-and-ajax-post-data-with-the-javascript-xmlhttprequest-method.html">
+            
+                <a href="json-apis-and-ajax-post-data-with-the-javascript-xmlhttprequest-method.html">
+            
+                    
+                    JSON APIs and Ajax: Post Data with the JavaScript XMLHttpRequest Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JSON APIs and Ajax: Access the JSON Data from an API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>JSON APIs and Ajax: Access the JSON Data from an API
+In the previous challenge, you saw how to get JSON data from the freeCodeCamp Cat Photo API.</p>
+<p>Now you&apos;ll take a closer look at the returned data to better understand the JSON format. Recall some notation in JavaScript:</p>
+<pre><code>[ ] -&gt; Square brackets represent an array
+{ } -&gt; Curly brackets represent an object
+&quot; &quot; -&gt; Double quotes represent a string. They are also used for key names in JSON
+</code></pre><p>Understanding the structure of the data that an API returns is important because it influences how you retrieve the values you need.</p>
+<p>On the right, click the &quot;Get Message&quot; button to load the freeCodeCamp Cat Photo API JSON into the HTML.</p>
+<p>The first and last character you see in the JSON data are square brackets [ ]. This means that the returned data is an array. The second character in the JSON data is a curly { bracket, which starts an object. Looking closely, you can see that there are three separate objects. The JSON data is an array of three objects, where each object contains information about a cat photo.</p>
+<p>You learned earlier that objects contain &quot;key-value pairs&quot; that are separated by commas. In the Cat Photo example, the first object has &quot;id&quot;:0 where &quot;id&quot; is a key and 0 is its corresponding value. Similarly, there are keys for &quot;imageLink&quot;, &quot;altText&quot;, and &quot;codeNames&quot;. Each cat photo object has these same keys, but with different values.</p>
+<p>Another interesting &quot;key-value pair&quot; in the first object is &quot;codeNames&quot;:[&quot;Juggernaut&quot;,&quot;Mrs. Wallace&quot;,&quot;ButterCup&quot;]. Here &quot;codeNames&quot; is the key and its value is an array of three strings. It&apos;s possible to have arrays of objects as well as a key with an array as a value.</p>
+<p>Remember how to access data in arrays and objects. Arrays use bracket notation to access a specific index of an item. Objects use either bracket or dot notation to access the value of a given property. Here&apos;s an example that prints the &quot;altText&quot; of the first cat photo - note that the parsed JSON data in the editor is saved in a variable called json:</p>
+<pre><code>console.log(json[0].altText);
+// Prints &quot;A white cat wearing a green helmet shaped melon on its head.&quot;
+</code></pre><p>For the cat with the &quot;id&quot; of 2, print to the console the second value in the codeNames array. You should use bracket and dot notation on the object (which is saved in the variable json) to access the value.</p>
+<pre><code>&lt;script&gt;
+  document.addEventListener(&apos;DOMContentLoaded&apos;,function(){
+    document.getElementById(&apos;getMessage&apos;).onclick=function(){
+      req=new XMLHttpRequest();
+      req.open(&quot;GET&quot;,&apos;/json/cats.json&apos;,true);
+      req.send();
+      req.onload=function(){
+        json=JSON.parse(req.responseText);
+        document.getElementsByClassName(&apos;message&apos;)[0].innerHTML=JSON.stringify(json);
+        // Add your code below this line
+        console.log(json[2].codeNames[1]);
+
+        // Add your code above this line
+      };
+    };
+  });
+&lt;/script&gt;
+&lt;style&gt;
+  body {
+    text-align: center;
+    font-family: &quot;Helvetica&quot;, sans-serif;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 20px 5px;
+  }
+  button {
+    color: white;
+    background-color: #4791d0;
+    border-radius: 5px;
+    border: 1px solid #4791d0;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    background-color: #0F5897;
+    border: 1px solid #0F5897;
+  }
+&lt;/style&gt;
+&lt;h1&gt;Cat Photo Finder&lt;/h1&gt; 
+&lt;p class=&quot;message box&quot;&gt;
+  The message will go here
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button id=&quot;getMessage&quot;&gt;
+    Get Message
+  &lt;/button&gt;
+&lt;/p&gt;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.html" class="navigation navigation-prev " aria-label="Previous page: JSON APIs and Ajax: Get JSON with the JavaScript XMLHttpRequest Method">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="json-apis-and-ajax-convert-json-data-to-html.html" class="navigation navigation-next " aria-label="Next page: JSON APIs and Ajax: Convert JSON Data to HTML">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JSON APIs and Ajax: Access the JSON Data from an API","level":"3.2.4","depth":2,"next":{"title":"JSON APIs and Ajax: Convert JSON Data to HTML","level":"3.2.5","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-convert-json-data-to-html.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-convert-json-data-to-html.md","articles":[]},"previous":{"title":"JSON APIs and Ajax: Get JSON with the JavaScript XMLHttpRequest Method","level":"3.2.3","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-access-the-json-data-from-an-api.md","mtime":"2018-08-26T10:21:37.491Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T11:30:23.793Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
