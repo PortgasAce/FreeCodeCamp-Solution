@@ -18,10 +18,10 @@ You learned earlier that objects contain "key-value pairs" that are separated by
 Another interesting "key-value pair" in the first object is "codeNames":["Juggernaut","Mrs. Wallace","ButterCup"]. Here "codeNames" is the key and its value is an array of three strings. It's possible to have arrays of objects as well as a key with an array as a value.
 
 Remember how to access data in arrays and objects. Arrays use bracket notation to access a specific index of an item. Objects use either bracket or dot notation to access the value of a given property. Here's an example that prints the "altText" of the first cat photo - note that the parsed JSON data in the editor is saved in a variable called json:
-
+```
 console.log(json[0].altText);
 // Prints "A white cat wearing a green helmet shaped melon on its head."
-
+```
 For the cat with the "id" of 2, print to the console the second value in the codeNames array. You should use bracket and dot notation on the object (which is saved in the variable json) to access the value.
 ```
 <script>
