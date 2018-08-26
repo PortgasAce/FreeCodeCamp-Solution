@@ -92,4 +92,5 @@
   * [JSON APIs and Ajax: Handle Click Events with JavaScript using the onclick property](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-handle-click-events-with-javascript-using-the-onclick-property.md)
   * [JSON APIs and Ajax: Change Text with click Events](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-change-text-with-click-events.md)
   * [JSON APIs and Ajax: Get JSON with the JavaScript XMLHttpRequest Method](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md)
+  * [JSON APIs and Ajax: Access the JSON Data from an API](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-access-the-json-data-from-an-api.md)
 
