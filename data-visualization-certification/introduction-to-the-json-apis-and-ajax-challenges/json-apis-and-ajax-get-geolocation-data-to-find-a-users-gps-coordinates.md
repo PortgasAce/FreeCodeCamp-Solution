@@ -19,3 +19,7 @@ First, it checks if the navigator.geolocation object exists. If it does, the get
 
 
 Add the example code inside the script tags to check a user's current location and insert it into the HTML.
+
+```
+
+```
