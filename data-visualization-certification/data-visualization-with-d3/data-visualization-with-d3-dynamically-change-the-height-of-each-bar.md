@@ -1,4 +1,4 @@
-Data Visualization with D3: Dynamically Change the Height of Each Bar
+# Data Visualization with D3: Dynamically Change the Height of Each Bar
 The height of each bar can be set to the value of the data point in the array, similar to how the x value was set dynamically.
 
 selection.attr("property", (d, i) => {

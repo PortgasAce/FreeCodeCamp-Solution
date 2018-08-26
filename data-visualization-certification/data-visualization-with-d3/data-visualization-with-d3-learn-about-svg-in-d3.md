@@ -1,4 +1,4 @@
-Data Visualization with D3: Learn About SVG in D3
+# Data Visualization with D3: Learn About SVG in D3
 SVG stands for Scalable Vector Graphics.
 
 Here "scalable" means that, if you zoom in or out on an object, it would not appear pixelated. It scales with the display system, whether it's on a small mobile screen or a large TV monitor.

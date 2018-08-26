@@ -1,4 +1,4 @@
-Data Visualization with D3: Change Styles Based on Data
+# Data Visualization with D3: Change Styles Based on Data
 D3 is about visualization and presentation of data. It's likely you'll want to change the styling of elements based on the data. You can use a callback function in the style() method to change the styling for different elements.
 
 For example, you may want to color a data point blue if has a value less than 20, and red otherwise. You can use a callback function in the style() method and include the conditional logic. The callback function uses the d parameter to represent the data point:

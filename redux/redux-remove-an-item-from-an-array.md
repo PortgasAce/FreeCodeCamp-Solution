@@ -1,4 +1,4 @@
-Redux: Remove an Item from an Array
+# Redux: Remove an Item from an Array
 Time to practice removing items from an array. The spread operator can be used here as well. Other useful JavaScript methods include slice() and concat().
 
 

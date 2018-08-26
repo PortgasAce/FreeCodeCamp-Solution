@@ -1,4 +1,4 @@
-Data Visualization with D3: Work with Dynamic Data in D3
+# Data Visualization with D3: Work with Dynamic Data in D3
 The last two challenges cover the basics of displaying data dynamically with D3 using the data() and enter() methods. These methods take a data set and, together with the append() method, create a new DOM element for each entry in the data set.
 
 In the previous challenge, you created a new h2 element for each item in the dataset array, but they all contained the same text, "New Title". This is because you have not made use of the data that is bound to each of the h2 elements.

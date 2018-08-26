@@ -1,4 +1,4 @@
-Redux: Get State from the Redux Store
+# Redux: Get State from the Redux Store
 The Redux store object provides several methods that allow you to interact with it. For example, you can retrieve the current state held in the Redux store object with the getState() method.
 
 

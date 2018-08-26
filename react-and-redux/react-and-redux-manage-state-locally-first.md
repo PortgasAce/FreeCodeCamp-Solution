@@ -1,4 +1,4 @@
-React and Redux: Manage State Locally First
+# React and Redux: Manage State Locally First
 Here you'll finish creating the DisplayMessages component.
 
 

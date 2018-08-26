@@ -1,4 +1,4 @@
-Data Visualization with D3: Add Document Elements with D3
+# Data Visualization with D3: Add Document Elements with D3
 D3 has several methods that let you add and change elements in your document.
 
 The select() method selects one element from the document. It takes an argument for the name of the element you want and returns an HTML node for the first element in the document that matches the name. Here's an example:

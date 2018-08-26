@@ -1,4 +1,4 @@
-Data Visualization with D3: Work with Data in D3
+# Data Visualization with D3: Work with Data in D3
 The D3 library focuses on a data-driven approach. When you have a set of data, you can apply D3 methods to display it on the page. Data comes in many formats, but this challenge uses a simple array of numbers.
 
 The first step is to make D3 aware of the data. The data() method is used on a selection of DOM elements to attach the data to those elements. The data set is passed as an argument to the method.

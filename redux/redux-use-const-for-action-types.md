@@ -1,4 +1,4 @@
-Redux: Use const for Action Types
+# Redux: Use const for Action Types
 A common practice when working with Redux is to assign action types as read-only constants, then reference these constants wherever they are used. You can refactor the code you're working with to write the action types as const declarations.
 
 

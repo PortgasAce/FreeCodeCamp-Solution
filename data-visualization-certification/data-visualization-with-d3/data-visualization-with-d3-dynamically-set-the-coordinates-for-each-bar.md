@@ -1,4 +1,4 @@
-Data Visualization with D3: Dynamically Set the Coordinates for Each Bar
+# Data Visualization with D3: Dynamically Set the Coordinates for Each Bar
 The last challenge created and appended a rectangle to the svg element for each point in dataset to represent a bar. Unfortunately, they were all stacked on top of each other.
 
 The placement of a rectangle is handled by the x and y attributes. They tell D3 where to start drawing the shape in the svg area. The last challenge set them each to 0, so every bar was placed in the upper-left corner.

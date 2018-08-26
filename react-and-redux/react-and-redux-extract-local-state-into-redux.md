@@ -1,4 +1,4 @@
-React and Redux: Extract Local State into Redux
+# React and Redux: Extract Local State into Redux
 You're almost done! Recall that you wrote all the Redux code so that Redux could control the state management of your React messages app. Now that Redux is connected, you need to extract the state management out of the Presentational component and into Redux. Currently, you have Redux connected, but you are handling the state locally within the Presentational component.
 
 
