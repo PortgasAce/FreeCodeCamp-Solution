@@ -2,10 +2,11 @@ JSON APIs and Ajax: Access the JSON Data from an API
 In the previous challenge, you saw how to get JSON data from the freeCodeCamp Cat Photo API.
 
 Now you'll take a closer look at the returned data to better understand the JSON format. Recall some notation in JavaScript:
-
+```
 [ ] -> Square brackets represent an array
 { } -> Curly brackets represent an object
 " " -> Double quotes represent a string. They are also used for key names in JSON
+```
 Understanding the structure of the data that an API returns is important because it influences how you retrieve the values you need.
 
 On the right, click the "Get Message" button to load the freeCodeCamp Cat Photo API JSON into the HTML.
