@@ -10,4 +10,5 @@ html += "<img src = '" + val.imageLink + "' " + "alt='" + val.altText + "'>";
 
 Add code to use the imageLink and altText properties in an img tag.
 ```
+
 ```
