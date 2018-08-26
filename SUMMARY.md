@@ -93,4 +93,5 @@
   * [JSON APIs and Ajax: Change Text with click Events](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-change-text-with-click-events.md)
   * [JSON APIs and Ajax: Get JSON with the JavaScript XMLHttpRequest Method](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md)
   * [JSON APIs and Ajax: Access the JSON Data from an API](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-access-the-json-data-from-an-api.md)
+  * [JSON APIs and Ajax: Convert JSON Data to HTML](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-convert-json-data-to-html.md)
 
