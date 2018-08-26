@@ -1,0 +1,8 @@
+{
+    "plugins": ["sitemap"],
+    "pluginsConfig": {
+        "sitemap": {
+            "hostname": "http://fcc.fiftykg.com/"
+        }
+    }
+}
