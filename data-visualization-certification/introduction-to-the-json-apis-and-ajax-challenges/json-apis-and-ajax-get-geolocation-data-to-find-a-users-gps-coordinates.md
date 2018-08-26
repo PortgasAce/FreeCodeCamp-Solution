@@ -21,5 +21,18 @@ First, it checks if the navigator.geolocation object exists. If it does, the get
 Add the example code inside the script tags to check a user's current location and insert it into the HTML.
 
 ```
+<script>
+  // Add your code below this line
+  if (navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(function(position) {
+    document.getElementById('data').innerHTML="latitude: "+ position.coords.latitude + "<br>longitude: " + position.coords.longitude;
+  });
+}
+  
+  // Add your code above this line
+</script>
+<h4>You are here:</h4>
+<div id="data">
 
+</div>
 ```
