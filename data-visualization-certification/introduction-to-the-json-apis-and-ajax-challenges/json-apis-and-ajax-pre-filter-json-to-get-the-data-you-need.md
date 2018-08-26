@@ -10,6 +10,7 @@ json = json.filter(function(val) {
 });
 
 Add code to filter the json data to remove the cat with the "id" value of 1.
+
 ```
 
 ```
