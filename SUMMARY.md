@@ -104,4 +104,5 @@
 * [Managing Packages with Npm](apis-and-microservices-certification/managing-packages-with-npm.md)
   * [Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.md)
 * [Basic Node and Express](apis-and-microservices-certification/basic-node-and-express.md)
+  * [Basic Node and Express - Meet the Node console](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.md)
 
