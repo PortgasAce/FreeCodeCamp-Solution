@@ -99,3 +99,7 @@
   * [JSON APIs and Ajax: Get Geolocation Data to Find A User's GPS Coordinates](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.md)
   * [JSON APIs and Ajax: Post Data with the JavaScript XMLHttpRequest Method](data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-post-data-with-the-javascript-xmlhttprequest-method.md)
 
+## Apis And Microservices Certification
+
+* [Managing Packages with Npm](apis-and-microservices-certification/managing-packages-with-npm.md)
+
