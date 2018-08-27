@@ -102,5 +102,6 @@
 ## Apis And Microservices Certification
 
 * [Managing Packages with Npm](apis-and-microservices-certification/managing-packages-with-npm.md)
+  * [Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.md)
 * [Basic Node and Express](apis-and-microservices-certification/basic-node-and-express.md)
 

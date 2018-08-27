@@ -11,9 +11,3 @@ locally within a project's own node_modules folder, accessible only to that proj
 
 Most developers prefer to install packages local to each project to create a separation between the dependencies of different projects. Working on these challenges will involve you writing your code on Glitch on our starter project. After completing each challenge you can copy your public Glitch url (to the homepage of your app) into the challenge screen to test it! Optionally you may choose to write your project on another platform but it must be publicly visible for our testing.
 Start this project on Glitch using this link or clone this repository on GitHub! If you use Glitch, remember to save the link to your project somewhere safe!
-
-- fork [glitch boilerplate-npm](https://glitch.com/#!/import/github/freeCodeCamp/boilerplate-npm)
-
-- add`"author": "Jane Doe",` to package.json
-
-- click share，copy the `Share your App` url
