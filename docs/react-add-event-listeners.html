@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React: Add Event Listeners · GitBook</title>
+        <title>React: Add Event Listeners · FreeCodeCamp Solution</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="Portgas <portgas.ly@foxmail.com>">
         
         
     
@@ -17,11 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +53,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,6 +67,17 @@
     
     <link rel="prev" href="react-use-the-lifecycle-method-componentdidmount.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"};
+    </script>
 
     </head>
     <body>
@@ -82,7 +98,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://blog.fiftykg.com" target="_blank" class="custom-link">My Simple Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1307,6 +1332,77 @@
     
 
     
+        
+        <li class="header">Apis And Microservices Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                <a href="apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                    
+                    Managing Packages with Npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                <a href="apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                    
+                    Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="apis-and-microservices-certification/basic-node-and-express.html">
+            
+                <a href="apis-and-microservices-certification/basic-node-and-express.html">
+            
+                    
+                    Basic Node and Express
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                <a href="apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                    
+                    Basic Node and Express - Meet the Node console
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -1345,7 +1441,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -1355,7 +1451,7 @@
 <p>You&apos;ve already been using some of these synthetic event handlers such as onClick(). React&apos;s synthetic event system is great to use for most interactions you&apos;ll manage on DOM elements. However, if you want to attach an event handler to the document or window objects, you have to do this directly.</p>
 <p>Attach an event listener in the componentDidMount() method for keydown events and have these events trigger the callback handleKeyPress(). You can use document.addEventListener() which takes the event (in quotes) as the first argument and the callback as the second argument.</p>
 <p>Then, in componentWillUnmount(), remove this same event listener. You can pass the same arguments to document.removeEventListener(). It&apos;s good practice to use this lifecycle method to do any clean up on React components before they are unmounted and destroyed. Removing event listeners is an example of one such clean up action.</p>
-<pre><code>class MyComponent extends React.Component {
+<pre class="language-"><code>class MyComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -1384,9 +1480,9 @@
   }
   render() {
     return (
-      &lt;div&gt;
-        &lt;h1&gt;{this.state.message}&lt;/h1&gt;
-      &lt;/div&gt;
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>{this.state.message}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
     );
   }
 };
@@ -1433,7 +1529,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React: Add Event Listeners","level":"2.1.5","depth":2,"next":{"title":"React: Manage Updates with Lifecycle Methods","level":"2.1.6","depth":2,"path":"react-manage-updates-with-lifecycle-methods.md","ref":"react-manage-updates-with-lifecycle-methods.md","articles":[]},"previous":{"title":"React: Use the Lifecycle Method componentDidMount","level":"2.1.4","depth":2,"path":"react-use-the-lifecycle-method-componentdidmount.md","ref":"react-use-the-lifecycle-method-componentdidmount.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["sitemap"],"pluginsConfig":{"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-add-event-listeners.md","mtime":"2018-08-26T12:45:26.426Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T14:36:48.457Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React: Add Event Listeners","level":"2.1.5","depth":2,"next":{"title":"React: Manage Updates with Lifecycle Methods","level":"2.1.6","depth":2,"path":"react-manage-updates-with-lifecycle-methods.md","ref":"react-manage-updates-with-lifecycle-methods.md","articles":[]},"previous":{"title":"React: Use the Lifecycle Method componentDidMount","level":"2.1.4","depth":2,"path":"react-use-the-lifecycle-method-componentdidmount.md","ref":"react-use-the-lifecycle-method-componentdidmount.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","-search","-lunr","-highlight","search-plus","github","prism","prism-themes","github-buttons","splitter","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"github":{"url":"https://github.com/PortgasAce/FreeCodeCamp-Solution"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night"},"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"prism-themes":{},"github-buttons":{"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"},"ga":{"configuration":"auto","token":"UA-105828632-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Portgas <portgas.ly@foxmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FreeCodeCamp Solution","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"My Simple Blog":"http://blog.fiftykg.com"}},"gitbook":"*","description":"FreeCodeCamp Solution","extension":null},"file":{"path":"react-add-event-listeners.md","mtime":"2018-08-26T12:45:26.426Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-27T17:14:30.982Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1443,19 +1539,27 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         

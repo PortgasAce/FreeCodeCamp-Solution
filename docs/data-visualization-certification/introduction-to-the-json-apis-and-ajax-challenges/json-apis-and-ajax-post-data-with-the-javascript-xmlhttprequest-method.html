@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>JSON APIs and Ajax: Post Data with the JavaScript XMLHttpRequest Method · GitBook</title>
+        <title>JSON APIs and Ajax: Post Data with the JavaScript XMLHttpRequest Method · FreeCodeCamp Solution</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="Portgas <portgas.ly@foxmail.com>">
         
         
     
@@ -17,11 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +53,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -57,9 +62,22 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../../apis-and-microservices-certification/managing-packages-with-npm.html" />
+    
     
     <link rel="prev" href="json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"};
+    </script>
 
     </head>
     <body>
@@ -80,7 +98,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://blog.fiftykg.com" target="_blank" class="custom-link">My Simple Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1305,6 +1332,77 @@
     
 
     
+        
+        <li class="header">Apis And Microservices Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                <a href="../../apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                    
+                    Managing Packages with Npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                <a href="../../apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                    
+                    Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../apis-and-microservices-certification/basic-node-and-express.html">
+            
+                <a href="../../apis-and-microservices-certification/basic-node-and-express.html">
+            
+                    
+                    Basic Node and Express
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                <a href="../../apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                    
+                    Basic Node and Express - Meet the Node console
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -1343,7 +1441,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -1351,7 +1449,7 @@
                                 <p>JSON APIs and Ajax: Post Data with the JavaScript XMLHttpRequest Method
 In the previous examples, you received data from an external resource. You can also send data to an external resource, as long as that resource supports AJAX requests and you know the URL.</p>
 <p>JavaScript&apos;s XMLHttpRequest method is also used to post data to a server. Here&apos;s an example:</p>
-<pre><code>req=new XMLHttpRequest();
+<pre class="language-"><code>req=new XMLHttpRequest();
 req.open(&quot;POST&quot;,url,true);
 req.setRequestHeader(&apos;Content-Type&apos;,&apos;text/plain&apos;);
 req.onreadystatechange=function(){
@@ -1365,7 +1463,7 @@ req.send(userName);
 <p>Next, the onreadystatechange event listener handles a change in the state of the request. A readyState of 4 means the operation is complete, and a status of 200 means it was a successful request. The document&apos;s HTML can be updated.</p>
 <p>Finally, the send method sends the request with the userName value, which was given by the user in the input field.</p>
 <p>Update the code to create and send a &quot;POST&quot; request. Then enter your name in input box and click &quot;Send Message&quot;. Your AJAX function will replace &quot;Reply from Server will be here.&quot; with the reply of the server. In this case, it is your name appended with &quot; loves cats&quot;.</p>
-<pre><code>&lt;script&gt;
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
   document.addEventListener(&apos;DOMContentLoaded&apos;,function(){
     document.getElementById(&apos;sendMessage&apos;).onclick=function(){
 
@@ -1384,45 +1482,45 @@ req.send(userName);
       // Add your code above this line
     };
   });
-&lt;/script&gt;
-&lt;style&gt;
-  body {
-    text-align: center;
-    font-family: &quot;Helvetica&quot;, sans-serif;
-  }
-  h1 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-  .box {
-    border-radius: 5px;
-    background-color: #eee;
-    padding: 20px 5px;
-  }
-  button {
-    color: white;
-    background-color: #4791d0;
-    border-radius: 5px;
-    border: 1px solid #4791d0;
-    padding: 5px 10px 8px 10px;
-  }
-  button:hover {
-    background-color: #0F5897;
-    border: 1px solid #0F5897;
-  }
-&lt;/style&gt;
-&lt;h1&gt;Cat Friends&lt;/h1&gt; 
-&lt;p class=&quot;message box&quot;&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+  <span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Helvetica&quot;</span>, sans-serif<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #eee<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 20px 5px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">button</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #4791d0<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #4791d0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 5px 10px 8px 10px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">button:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #0F5897<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #0F5897<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Cat Friends<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>message box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
   Reply from Server will be here
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;label for=&quot;name&quot;&gt;Your name:
-    &lt;input type=&quot;text&quot; id=&quot;name&quot;/&gt;
-  &lt;/label&gt;
-  &lt;button id=&quot;sendMessage&quot;&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Your name:
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sendMessage<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
     Send Message
-  &lt;/button&gt;
-&lt;/p&gt;
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
                                 
                                 </section>
@@ -1450,10 +1548,14 @@ req.send(userName);
 
             
                 
-                <a href="json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: JSON APIs and Ajax: Get Geolocation Data to Find A User's GPS Coordinates">
+                <a href="json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.html" class="navigation navigation-prev " aria-label="Previous page: JSON APIs and Ajax: Get Geolocation Data to Find A User's GPS Coordinates">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../../apis-and-microservices-certification/managing-packages-with-npm.html" class="navigation navigation-next " aria-label="Next page: Managing Packages with Npm">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1462,7 +1564,7 @@ req.send(userName);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JSON APIs and Ajax: Post Data with the JavaScript XMLHttpRequest Method","level":"3.2.9","depth":2,"previous":{"title":"JSON APIs and Ajax: Get Geolocation Data to Find A User's GPS Coordinates","level":"3.2.8","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["sitemap"],"pluginsConfig":{"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-post-data-with-the-javascript-xmlhttprequest-method.md","mtime":"2018-08-26T11:02:47.834Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T14:36:48.457Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JSON APIs and Ajax: Post Data with the JavaScript XMLHttpRequest Method","level":"3.2.9","depth":2,"next":{"title":"Managing Packages with Npm","level":"4.1","depth":1,"path":"apis-and-microservices-certification/managing-packages-with-npm.md","ref":"apis-and-microservices-certification/managing-packages-with-npm.md","articles":[{"title":"Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package","level":"4.1.1","depth":2,"path":"apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.md","ref":"apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.md","articles":[]}]},"previous":{"title":"JSON APIs and Ajax: Get Geolocation Data to Find A User's GPS Coordinates","level":"3.2.8","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","-search","-lunr","-highlight","search-plus","github","prism","prism-themes","github-buttons","splitter","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"github":{"url":"https://github.com/PortgasAce/FreeCodeCamp-Solution"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night"},"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"prism-themes":{},"github-buttons":{"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"},"ga":{"configuration":"auto","token":"UA-105828632-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Portgas <portgas.ly@foxmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FreeCodeCamp Solution","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"My Simple Blog":"http://blog.fiftykg.com"}},"gitbook":"*","description":"FreeCodeCamp Solution","extension":null},"file":{"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-post-data-with-the-javascript-xmlhttprequest-method.md","mtime":"2018-08-26T11:02:47.834Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-27T17:14:30.982Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1472,19 +1574,27 @@ req.send(userName);
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         

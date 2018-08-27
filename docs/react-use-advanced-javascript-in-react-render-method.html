@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React: Use Advanced JavaScript in React Render Method · GitBook</title>
+        <title>React: Use Advanced JavaScript in React Render Method · FreeCodeCamp Solution</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="Portgas <portgas.ly@foxmail.com>">
         
         
     
@@ -17,11 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +53,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,6 +67,17 @@
     
     <link rel="prev" href="react-add-inline-styles-in-react.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"};
+    </script>
 
     </head>
     <body>
@@ -82,7 +98,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://blog.fiftykg.com" target="_blank" class="custom-link">My Simple Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1307,6 +1332,77 @@
     
 
     
+        
+        <li class="header">Apis And Microservices Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                <a href="apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                    
+                    Managing Packages with Npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                <a href="apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                    
+                    Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="apis-and-microservices-certification/basic-node-and-express.html">
+            
+                <a href="apis-and-microservices-certification/basic-node-and-express.html">
+            
+                    
+                    Basic Node and Express
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                <a href="apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                    
+                    Basic Node and Express - Meet the Node console
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -1345,7 +1441,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -1354,7 +1450,7 @@
 <p>In previous challenges, you learned how to inject JavaScript code into JSX code using curly braces, { }, for tasks like accessing props, passing props, accessing state, inserting comments into your code, and most recently, styling your components. These are all common use cases to put JavaScript in JSX, but they aren&apos;t the only way that you can utilize JavaScript code in your React components.</p>
 <p>You can also write JavaScript directly in your render methods, before the return statement, without inserting it inside of curly braces. This is because it is not yet within the JSX code. When you want to use a variable later in the JSX code inside the return statement, you place the variable name inside curly braces.</p>
 <p>In the code provided, the render method has an array that contains 20 phrases to represent the answers found in the classic 1980&apos;s Magic Eight Ball toy. The button click event is bound to the ask method, so each time the button is clicked a random number will be generated and stored as the randomIndex in state. On line 52, delete the string &quot;change me!&quot; and reassign the answer const so your code randomly accesses a different index of the possibleAnswers array each time the component updates. Finally, insert the answer const inside the p tags.</p>
-<pre><code>const inputStyle = {
+<pre class="language-"><code>const inputStyle = {
   width: 235,
   margin: 5
 }
@@ -1407,22 +1503,22 @@ class MagicEightBall extends React.Component {
     ];
     const answer = possibleAnswers[this.state.randomIndex]; // &lt;&lt; change code here
     return (
-      &lt;div&gt;
-        &lt;input
-          type=&quot;text&quot;
-          value={this.state.userInput}
-          onChange={this.handleChange}
-          style={inputStyle} /&gt;&lt;br /&gt;
-        &lt;button onClick={this.ask}&gt;
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span>{this.state.userInput}</span>
+          <span class="token attr-name">onChange</span><span class="token attr-value"><span class="token punctuation">=</span>{this.handleChange}</span>
+          <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span>{inputStyle}</span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token attr-value"><span class="token punctuation">=</span>{this.ask}</span><span class="token punctuation">&gt;</span></span>
           Ask the Magic Eight Ball!
-        &lt;/button&gt;&lt;br /&gt;
-        &lt;h3&gt;Answer:&lt;/h3&gt;
-        &lt;p&gt;
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Answer:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
           { /* change code below this line */ }
           {answer}
           { /* change code above this line */ }
-        &lt;/p&gt;
-      &lt;/div&gt;
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
     );
   }
 };
@@ -1469,7 +1565,7 @@ class MagicEightBall extends React.Component {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React: Use Advanced JavaScript in React Render Method","level":"2.1.10","depth":2,"next":{"title":"React: Render with an If/Else Condition","level":"2.1.11","depth":2,"path":"react-render-with-an-ifelse-condition.md","ref":"react-render-with-an-ifelse-condition.md","articles":[]},"previous":{"title":"React: Add Inline Styles in React","level":"2.1.9","depth":2,"path":"react-add-inline-styles-in-react.md","ref":"react-add-inline-styles-in-react.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["sitemap"],"pluginsConfig":{"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-use-advanced-javascript-in-react-render-method.md","mtime":"2018-08-26T12:45:26.445Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T14:36:48.457Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React: Use Advanced JavaScript in React Render Method","level":"2.1.10","depth":2,"next":{"title":"React: Render with an If/Else Condition","level":"2.1.11","depth":2,"path":"react-render-with-an-ifelse-condition.md","ref":"react-render-with-an-ifelse-condition.md","articles":[]},"previous":{"title":"React: Add Inline Styles in React","level":"2.1.9","depth":2,"path":"react-add-inline-styles-in-react.md","ref":"react-add-inline-styles-in-react.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","-search","-lunr","-highlight","search-plus","github","prism","prism-themes","github-buttons","splitter","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"github":{"url":"https://github.com/PortgasAce/FreeCodeCamp-Solution"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night"},"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"prism-themes":{},"github-buttons":{"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"},"ga":{"configuration":"auto","token":"UA-105828632-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Portgas <portgas.ly@foxmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FreeCodeCamp Solution","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"My Simple Blog":"http://blog.fiftykg.com"}},"gitbook":"*","description":"FreeCodeCamp Solution","extension":null},"file":{"path":"react-use-advanced-javascript-in-react-render-method.md","mtime":"2018-08-26T12:45:26.445Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-27T17:14:30.982Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1479,19 +1575,27 @@ class MagicEightBall extends React.Component {
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         

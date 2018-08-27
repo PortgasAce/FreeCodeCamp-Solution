@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>JSON APIs and Ajax: Access the JSON Data from an API · GitBook</title>
+        <title>JSON APIs and Ajax: Access the JSON Data from an API · FreeCodeCamp Solution</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="Portgas <portgas.ly@foxmail.com>">
         
         
     
@@ -17,11 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +53,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,6 +67,17 @@
     
     <link rel="prev" href="json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"};
+    </script>
 
     </head>
     <body>
@@ -82,7 +98,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://blog.fiftykg.com" target="_blank" class="custom-link">My Simple Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1307,6 +1332,77 @@
     
 
     
+        
+        <li class="header">Apis And Microservices Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                <a href="../../apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                    
+                    Managing Packages with Npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                <a href="../../apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                    
+                    Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../apis-and-microservices-certification/basic-node-and-express.html">
+            
+                <a href="../../apis-and-microservices-certification/basic-node-and-express.html">
+            
+                    
+                    Basic Node and Express
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                <a href="../../apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                    
+                    Basic Node and Express - Meet the Node console
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -1345,7 +1441,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -1353,7 +1449,7 @@
                                 <p>JSON APIs and Ajax: Access the JSON Data from an API
 In the previous challenge, you saw how to get JSON data from the freeCodeCamp Cat Photo API.</p>
 <p>Now you&apos;ll take a closer look at the returned data to better understand the JSON format. Recall some notation in JavaScript:</p>
-<pre><code>[ ] -&gt; Square brackets represent an array
+<pre class="language-"><code>[ ] -&gt; Square brackets represent an array
 { } -&gt; Curly brackets represent an object
 &quot; &quot; -&gt; Double quotes represent a string. They are also used for key names in JSON
 </code></pre><p>Understanding the structure of the data that an API returns is important because it influences how you retrieve the values you need.</p>
@@ -1362,10 +1458,10 @@ In the previous challenge, you saw how to get JSON data from the freeCodeCamp Ca
 <p>You learned earlier that objects contain &quot;key-value pairs&quot; that are separated by commas. In the Cat Photo example, the first object has &quot;id&quot;:0 where &quot;id&quot; is a key and 0 is its corresponding value. Similarly, there are keys for &quot;imageLink&quot;, &quot;altText&quot;, and &quot;codeNames&quot;. Each cat photo object has these same keys, but with different values.</p>
 <p>Another interesting &quot;key-value pair&quot; in the first object is &quot;codeNames&quot;:[&quot;Juggernaut&quot;,&quot;Mrs. Wallace&quot;,&quot;ButterCup&quot;]. Here &quot;codeNames&quot; is the key and its value is an array of three strings. It&apos;s possible to have arrays of objects as well as a key with an array as a value.</p>
 <p>Remember how to access data in arrays and objects. Arrays use bracket notation to access a specific index of an item. Objects use either bracket or dot notation to access the value of a given property. Here&apos;s an example that prints the &quot;altText&quot; of the first cat photo - note that the parsed JSON data in the editor is saved in a variable called json:</p>
-<pre><code>console.log(json[0].altText);
+<pre class="language-"><code>console.log(json[0].altText);
 // Prints &quot;A white cat wearing a green helmet shaped melon on its head.&quot;
 </code></pre><p>For the cat with the &quot;id&quot; of 2, print to the console the second value in the codeNames array. You should use bracket and dot notation on the object (which is saved in the variable json) to access the value.</p>
-<pre><code>&lt;script&gt;
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
   document.addEventListener(&apos;DOMContentLoaded&apos;,function(){
     document.getElementById(&apos;getMessage&apos;).onclick=function(){
       req=new XMLHttpRequest();
@@ -1381,42 +1477,42 @@ In the previous challenge, you saw how to get JSON data from the freeCodeCamp Ca
       };
     };
   });
-&lt;/script&gt;
-&lt;style&gt;
-  body {
-    text-align: center;
-    font-family: &quot;Helvetica&quot;, sans-serif;
-  }
-  h1 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-  .box {
-    border-radius: 5px;
-    background-color: #eee;
-    padding: 20px 5px;
-  }
-  button {
-    color: white;
-    background-color: #4791d0;
-    border-radius: 5px;
-    border: 1px solid #4791d0;
-    padding: 5px 10px 8px 10px;
-  }
-  button:hover {
-    background-color: #0F5897;
-    border: 1px solid #0F5897;
-  }
-&lt;/style&gt;
-&lt;h1&gt;Cat Photo Finder&lt;/h1&gt; 
-&lt;p class=&quot;message box&quot;&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+  <span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Helvetica&quot;</span>, sans-serif<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #eee<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 20px 5px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">button</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #4791d0<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #4791d0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 5px 10px 8px 10px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">button:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #0F5897<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #0F5897<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Cat Photo Finder<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>message box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
   The message will go here
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;button id=&quot;getMessage&quot;&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>getMessage<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
     Get Message
-  &lt;/button&gt;
-&lt;/p&gt;
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
                                 
                                 </section>
@@ -1460,7 +1556,7 @@ In the previous challenge, you saw how to get JSON data from the freeCodeCamp Ca
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JSON APIs and Ajax: Access the JSON Data from an API","level":"3.2.4","depth":2,"next":{"title":"JSON APIs and Ajax: Convert JSON Data to HTML","level":"3.2.5","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-convert-json-data-to-html.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-convert-json-data-to-html.md","articles":[]},"previous":{"title":"JSON APIs and Ajax: Get JSON with the JavaScript XMLHttpRequest Method","level":"3.2.3","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["sitemap"],"pluginsConfig":{"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-access-the-json-data-from-an-api.md","mtime":"2018-08-26T10:21:37.491Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T14:36:48.457Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JSON APIs and Ajax: Access the JSON Data from an API","level":"3.2.4","depth":2,"next":{"title":"JSON APIs and Ajax: Convert JSON Data to HTML","level":"3.2.5","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-convert-json-data-to-html.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-convert-json-data-to-html.md","articles":[]},"previous":{"title":"JSON APIs and Ajax: Get JSON with the JavaScript XMLHttpRequest Method","level":"3.2.3","depth":2,"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md","ref":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-json-with-the-javascript-xmlhttprequest-method.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","-search","-lunr","-highlight","search-plus","github","prism","prism-themes","github-buttons","splitter","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"github":{"url":"https://github.com/PortgasAce/FreeCodeCamp-Solution"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night"},"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"prism-themes":{},"github-buttons":{"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"},"ga":{"configuration":"auto","token":"UA-105828632-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Portgas <portgas.ly@foxmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FreeCodeCamp Solution","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"My Simple Blog":"http://blog.fiftykg.com"}},"gitbook":"*","description":"FreeCodeCamp Solution","extension":null},"file":{"path":"data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-access-the-json-data-from-an-api.md","mtime":"2018-08-26T10:21:37.491Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-27T17:14:30.982Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1470,19 +1566,27 @@ In the previous challenge, you saw how to get JSON data from the freeCodeCamp Ca
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         

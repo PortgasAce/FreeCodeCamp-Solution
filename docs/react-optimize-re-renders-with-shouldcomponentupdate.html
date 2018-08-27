@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React: Optimize Re-Renders with shouldComponentUpdate · GitBook</title>
+        <title>React: Optimize Re-Renders with shouldComponentUpdate · FreeCodeCamp Solution</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="Portgas <portgas.ly@foxmail.com>">
         
         
     
@@ -17,11 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +53,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,6 +67,17 @@
     
     <link rel="prev" href="react-manage-updates-with-lifecycle-methods.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"};
+    </script>
 
     </head>
     <body>
@@ -82,7 +98,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://blog.fiftykg.com" target="_blank" class="custom-link">My Simple Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1307,6 +1332,77 @@
     
 
     
+        
+        <li class="header">Apis And Microservices Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                <a href="apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                    
+                    Managing Packages with Npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                <a href="apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                    
+                    Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="apis-and-microservices-certification/basic-node-and-express.html">
+            
+                <a href="apis-and-microservices-certification/basic-node-and-express.html">
+            
+                    
+                    Basic Node and Express
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                <a href="apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                    
+                    Basic Node and Express - Meet the Node console
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -1345,7 +1441,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -1354,7 +1450,7 @@
 <p>So far, if any component receives new state or new props, it re-renders itself and all its children. This is usually okay. But React provides a lifecycle method you can call when child components receive new state or props, and declare specifically if the components should update or not. The method is shouldComponentUpdate(), and it takes nextProps and nextState as parameters.</p>
 <p>This method is a useful way to optimize performance. For example, the default behavior is that your component re-renders when it receives new props, even if the props haven&apos;t changed. You can use shouldComponentUpdate() to prevent this by comparing the props. The method must return a boolean value that tells React whether or not to update the component. You can compare the current props (this.props) to the next props (nextProps) to determine if you need to update or not, and return true or false accordingly.</p>
 <p>The shouldComponentUpdate() method is added in a component called OnlyEvens. Currently, this method returns true so OnlyEvens re-renders every time it receives new props. Modify the method so OnlyEvens updates only if the value of its new props is even. Click the Add button and watch the order of events in your browser&apos;s console as the other lifecycle hooks are triggered.</p>
-<pre><code>class OnlyEvens extends React.Component {
+<pre class="language-"><code>class OnlyEvens extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -1371,7 +1467,7 @@
     console.log(&apos;Component re-rendered.&apos;);
   }
   render() {
-    return &lt;h1&gt;{this.props.value}&lt;/h1&gt;
+    return <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>{this.props.value}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
   }
 };
 
@@ -1390,10 +1486,10 @@ class Controller extends React.Component {
   }
   render() {
     return (
-      &lt;div&gt;
-        &lt;button onClick={this.addValue}&gt;Add&lt;/button&gt;
-        &lt;OnlyEvens value={this.state.value}/&gt;
-      &lt;/div&gt;
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token attr-value"><span class="token punctuation">=</span>{this.addValue}</span><span class="token punctuation">&gt;</span></span>Add<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>OnlyEvens</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span>{this.state.value}/</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
     );
   }
 };
@@ -1440,7 +1536,7 @@ class Controller extends React.Component {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React: Optimize Re-Renders with shouldComponentUpdate","level":"2.1.7","depth":2,"next":{"title":"React: Introducing Inline Styles","level":"2.1.8","depth":2,"path":"react-introducing-inline-styles.md","ref":"react-introducing-inline-styles.md","articles":[]},"previous":{"title":"React: Manage Updates with Lifecycle Methods","level":"2.1.6","depth":2,"path":"react-manage-updates-with-lifecycle-methods.md","ref":"react-manage-updates-with-lifecycle-methods.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["sitemap"],"pluginsConfig":{"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-optimize-re-renders-with-shouldcomponentupdate.md","mtime":"2018-08-26T12:45:26.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T14:36:48.457Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React: Optimize Re-Renders with shouldComponentUpdate","level":"2.1.7","depth":2,"next":{"title":"React: Introducing Inline Styles","level":"2.1.8","depth":2,"path":"react-introducing-inline-styles.md","ref":"react-introducing-inline-styles.md","articles":[]},"previous":{"title":"React: Manage Updates with Lifecycle Methods","level":"2.1.6","depth":2,"path":"react-manage-updates-with-lifecycle-methods.md","ref":"react-manage-updates-with-lifecycle-methods.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","-search","-lunr","-highlight","search-plus","github","prism","prism-themes","github-buttons","splitter","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"github":{"url":"https://github.com/PortgasAce/FreeCodeCamp-Solution"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night"},"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"prism-themes":{},"github-buttons":{"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"},"ga":{"configuration":"auto","token":"UA-105828632-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Portgas <portgas.ly@foxmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FreeCodeCamp Solution","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"My Simple Blog":"http://blog.fiftykg.com"}},"gitbook":"*","description":"FreeCodeCamp Solution","extension":null},"file":{"path":"react-optimize-re-renders-with-shouldcomponentupdate.md","mtime":"2018-08-26T12:45:26.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-27T17:14:30.982Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1450,19 +1546,27 @@ class Controller extends React.Component {
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         

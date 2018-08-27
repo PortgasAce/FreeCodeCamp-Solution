@@ -1,8 +1,59 @@
 {
-    "plugins": ["sitemap"],
-    "pluginsConfig": {
+"author": "Portgas <portgas.ly@foxmail.com>",
+"description": "FreeCodeCamp Solution",
+"extension": null,
+"generator": "site",
+"links": {
+"sharing": {
+"all": null,
+"facebook": null,
+"google": null,
+"twitter": null,
+"weibo": null
+},
+"sidebar": {
+"My Simple Blog": "http://blog.fiftykg.com"
+}
+},
+"output": null,
+"title": "FreeCodeCamp Solution",
+"variables": {},
+"plugins": [
+"sitemap",
+"-search",
+"-lunr",
+"-highlight",
+"search-plus",
+"github",
+"prism",
+"prism-themes",
+"github-buttons",
+"splitter",
+"ga"
+],
+"pluginsConfig": {
         "sitemap": {
             "hostname": "http://fcc.fiftykg.com/"
-        }
+        },
+    "fontSettings": {
+      "theme": "night"
+    },
+    "github": {
+        "url": "https://github.com/PortgasAce/FreeCodeCamp-Solution"
+    },
+    "prism": {
+     "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+"github-buttons": {
+	    "user": "PortgasAce",
+            "repo": "FreeCodeCamp-Solution",
+            "type": "star",
+            "size": "large"
+        },
+    "ga": {
+        "token": "UA-105828632-1"
     }
+  }
 }

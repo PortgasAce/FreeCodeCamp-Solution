@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React and Redux: Moving Forward From Here · GitBook</title>
+        <title>React and Redux: Moving Forward From Here · FreeCodeCamp Solution</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="Portgas <portgas.ly@foxmail.com>">
         
         
     
@@ -17,11 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +53,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,6 +67,17 @@
     
     <link rel="prev" href="react-and-redux-extract-local-state-into-redux.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"};
+    </script>
 
     </head>
     <body>
@@ -82,7 +98,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://blog.fiftykg.com" target="_blank" class="custom-link">My Simple Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1307,6 +1332,77 @@
     
 
     
+        
+        <li class="header">Apis And Microservices Certification</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                <a href="../apis-and-microservices-certification/managing-packages-with-npm.html">
+            
+                    
+                    Managing Packages with Npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                <a href="../apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html">
+            
+                    
+                    Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../apis-and-microservices-certification/basic-node-and-express.html">
+            
+                <a href="../apis-and-microservices-certification/basic-node-and-express.html">
+            
+                    
+                    Basic Node and Express
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                <a href="../apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html">
+            
+                    
+                    Basic Node and Express - Meet the Node console
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -1345,7 +1441,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -1356,7 +1452,7 @@
 <p>Create React App comes configured and ready to go.</p>
 <p>Alternatively, you can enable Babel as a JavaScript Preprocessor in CodePen, add React and ReactDOM as external JavaScript resources, and work there as well.</p>
 <p>Log the message &apos;Now I know React and Redux!&apos; to the console.</p>
-<pre><code>// import React from &apos;react&apos;
+<pre class="language-"><code>// import React from &apos;react&apos;
 // import ReactDOM from &apos;react-dom&apos;
 // import { Provider, connect } from &apos;react-redux&apos;
 // import { createStore, combineReducers, applyMiddleware } from &apos;redux&apos;
@@ -1371,9 +1467,9 @@
 // );
 
 // ReactDOM.render(
-//   &lt;Provider store={store}&gt;
-//     &lt;App/&gt;
-//   &lt;/Provider&gt;,
+//   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Provider</span> <span class="token attr-name">store</span><span class="token attr-value"><span class="token punctuation">=</span>{store}</span><span class="token punctuation">&gt;</span></span>
+//     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>App</span><span class="token punctuation">/&gt;</span></span>
+//   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Provider</span><span class="token punctuation">&gt;</span></span>,
 //   document.getElementById(&apos;root&apos;)
 // );
 
@@ -1422,7 +1518,7 @@ console.log(&apos;Now I know React and Redux!&apos;)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React and Redux: Moving Forward From Here","level":"2.3.10","depth":2,"next":{"title":"Data Visualization with D3","level":"3.1","depth":1,"path":"data-visualization-certification/data-visualization-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3.md","articles":[{"title":"Data Visualization with D3: Add Document Elements with D3","level":"3.1.1","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-document-elements-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-document-elements-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Select a Group of Elements with D3","level":"3.1.2","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-select-a-group-of-elements-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-select-a-group-of-elements-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Work with Data in D3","level":"3.1.3","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-data-in-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-data-in-d3.md","articles":[]},{"title":"Data Visualization with D3: Work with Dynamic Data in D3","level":"3.1.4","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-dynamic-data-in-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-dynamic-data-in-d3.md","articles":[]},{"title":"Data Visualization with D3: Add Inline Styling to Elements","level":"3.1.5","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-inline-styling-to-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-inline-styling-to-elements.md","articles":[]},{"title":"Data Visualization with D3: Change Styles Based on Data","level":"3.1.6","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-styles-based-on-data.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-styles-based-on-data.md","articles":[]},{"title":"Data Visualization with D3: Add Classes with D3","level":"3.1.7","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-classes-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-classes-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Update the Height of an Element Dynamically","level":"3.1.8","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-update-the-height-of-an-element-dynamically.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-update-the-height-of-an-element-dynamically.md","articles":[]},{"title":"Data Visualization with D3: Change the Presentation of a Bar Chart","level":"3.1.9","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.md","articles":[]},{"title":"Data Visualization with D3: Learn About SVG in D3","level":"3.1.10","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.md","articles":[]},{"title":"Data Visualization with D3: Display Shapes with SVG","level":"3.1.11","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-display-shapes-with-svg.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-display-shapes-with-svg.md","articles":[]},{"title":"Data Visualization with D3: Create a Bar for Each Data Point in the Set","level":"3.1.12","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.md","articles":[]},{"title":"Data Visualization with D3: Dynamically Set the Coordinates for Each Bar","level":"3.1.13","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-set-the-coordinates-for-each-bar.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-set-the-coordinates-for-each-bar.md","articles":[]},{"title":"Data Visualization with D3: Dynamically Change the Height of Each Bar","level":"3.1.14","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-change-the-height-of-each-bar.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-change-the-height-of-each-bar.md","articles":[]},{"title":"Data Visualization with D3: Invert SVG Elements","level":"3.1.15","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-invert-svg-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-invert-svg-elements.md","articles":[]},{"title":"Data Visualization with D3: Change the Color of an SVG Element","level":"3.1.16","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-color-of-an-svg-element.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-color-of-an-svg-element.md","articles":[]},{"title":"Data Visualization with D3: Add Labels to D3 Elements","level":"3.1.17","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-d3-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-d3-elements.md","articles":[]},{"title":"Data Visualization with D3: Style D3 Labels","level":"3.1.18","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-style-d3-labels.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-style-d3-labels.md","articles":[]},{"title":"Data Visualization with D3: Add a Hover Effect to a D3 Element","level":"3.1.19","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-hover-effect-to-a-d3-element.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-hover-effect-to-a-d3-element.md","articles":[]},{"title":"Data Visualization with D3: Add a Tooltip to a D3 Element","level":"3.1.20","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-tooltip-to-a-d3-element.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-tooltip-to-a-d3-element.md","articles":[]},{"title":"Data Visualization with D3: Create a Scatterplot with SVG Circles","level":"3.1.21","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-scatterplot-with-svg-circles.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-scatterplot-with-svg-circles.md","articles":[]},{"title":"Data Visualization with D3: Add Attributes to the Circle Elements","level":"3.1.22","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.md","articles":[]},{"title":"Data Visualization with D3: Add Labels to Scatter Plot Circles","level":"3.1.23","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.md","articles":[]},{"title":"Data Visualization with D3: Create a Linear Scale with D3","level":"3.1.24","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Set a Domain and a Range on a Scale","level":"3.1.25","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.md","articles":[]},{"title":"Data Visualization with D3: Use the d3.max and d3.min Functions to Find Minimum and Maximum Values in a Dataset","level":"3.1.26","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.md","articles":[]},{"title":"Data Visualization with D3: Use Dynamic Scales","level":"3.1.27","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.md","articles":[]},{"title":"Data Visualization with D3: Use a Pre-Defined Scale to Place Elements","level":"3.1.28","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.md","articles":[]},{"title":"Data Visualization with D3: Add Axes to a Visualization","level":"3.1.29","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.md","articles":[]}]},"previous":{"title":"React and Redux: Extract Local State into Redux","level":"2.3.9","depth":2,"path":"react-and-redux/react-and-redux-extract-local-state-into-redux.md","ref":"react-and-redux/react-and-redux-extract-local-state-into-redux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["sitemap"],"pluginsConfig":{"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-and-redux/react-and-redux-moving-forward-from-here.md","mtime":"2018-08-26T12:45:26.434Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T14:36:48.457Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React and Redux: Moving Forward From Here","level":"2.3.10","depth":2,"next":{"title":"Data Visualization with D3","level":"3.1","depth":1,"path":"data-visualization-certification/data-visualization-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3.md","articles":[{"title":"Data Visualization with D3: Add Document Elements with D3","level":"3.1.1","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-document-elements-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-document-elements-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Select a Group of Elements with D3","level":"3.1.2","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-select-a-group-of-elements-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-select-a-group-of-elements-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Work with Data in D3","level":"3.1.3","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-data-in-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-data-in-d3.md","articles":[]},{"title":"Data Visualization with D3: Work with Dynamic Data in D3","level":"3.1.4","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-dynamic-data-in-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-work-with-dynamic-data-in-d3.md","articles":[]},{"title":"Data Visualization with D3: Add Inline Styling to Elements","level":"3.1.5","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-inline-styling-to-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-inline-styling-to-elements.md","articles":[]},{"title":"Data Visualization with D3: Change Styles Based on Data","level":"3.1.6","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-styles-based-on-data.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-styles-based-on-data.md","articles":[]},{"title":"Data Visualization with D3: Add Classes with D3","level":"3.1.7","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-classes-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-classes-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Update the Height of an Element Dynamically","level":"3.1.8","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-update-the-height-of-an-element-dynamically.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-update-the-height-of-an-element-dynamically.md","articles":[]},{"title":"Data Visualization with D3: Change the Presentation of a Bar Chart","level":"3.1.9","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-presentation-of-a-bar-chart.md","articles":[]},{"title":"Data Visualization with D3: Learn About SVG in D3","level":"3.1.10","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-learn-about-svg-in-d3.md","articles":[]},{"title":"Data Visualization with D3: Display Shapes with SVG","level":"3.1.11","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-display-shapes-with-svg.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-display-shapes-with-svg.md","articles":[]},{"title":"Data Visualization with D3: Create a Bar for Each Data Point in the Set","level":"3.1.12","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-bar-for-each-data-point-in-the-set.md","articles":[]},{"title":"Data Visualization with D3: Dynamically Set the Coordinates for Each Bar","level":"3.1.13","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-set-the-coordinates-for-each-bar.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-set-the-coordinates-for-each-bar.md","articles":[]},{"title":"Data Visualization with D3: Dynamically Change the Height of Each Bar","level":"3.1.14","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-change-the-height-of-each-bar.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-dynamically-change-the-height-of-each-bar.md","articles":[]},{"title":"Data Visualization with D3: Invert SVG Elements","level":"3.1.15","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-invert-svg-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-invert-svg-elements.md","articles":[]},{"title":"Data Visualization with D3: Change the Color of an SVG Element","level":"3.1.16","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-color-of-an-svg-element.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-change-the-color-of-an-svg-element.md","articles":[]},{"title":"Data Visualization with D3: Add Labels to D3 Elements","level":"3.1.17","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-d3-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-d3-elements.md","articles":[]},{"title":"Data Visualization with D3: Style D3 Labels","level":"3.1.18","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-style-d3-labels.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-style-d3-labels.md","articles":[]},{"title":"Data Visualization with D3: Add a Hover Effect to a D3 Element","level":"3.1.19","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-hover-effect-to-a-d3-element.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-hover-effect-to-a-d3-element.md","articles":[]},{"title":"Data Visualization with D3: Add a Tooltip to a D3 Element","level":"3.1.20","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-tooltip-to-a-d3-element.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-a-tooltip-to-a-d3-element.md","articles":[]},{"title":"Data Visualization with D3: Create a Scatterplot with SVG Circles","level":"3.1.21","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-scatterplot-with-svg-circles.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-scatterplot-with-svg-circles.md","articles":[]},{"title":"Data Visualization with D3: Add Attributes to the Circle Elements","level":"3.1.22","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-attributes-to-the-circle-elements.md","articles":[]},{"title":"Data Visualization with D3: Add Labels to Scatter Plot Circles","level":"3.1.23","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-labels-to-scatter-plot-circles.md","articles":[]},{"title":"Data Visualization with D3: Create a Linear Scale with D3","level":"3.1.24","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-create-a-linear-scale-with-d3.md","articles":[]},{"title":"Data Visualization with D3: Set a Domain and a Range on a Scale","level":"3.1.25","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-set-a-domain-and-a-range-on-a-scale.md","articles":[]},{"title":"Data Visualization with D3: Use the d3.max and d3.min Functions to Find Minimum and Maximum Values in a Dataset","level":"3.1.26","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-the-d3max-and-d3min-functions-to-find-minimum-and-maximum-values-in-a-dataset.md","articles":[]},{"title":"Data Visualization with D3: Use Dynamic Scales","level":"3.1.27","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-dynamic-scales.md","articles":[]},{"title":"Data Visualization with D3: Use a Pre-Defined Scale to Place Elements","level":"3.1.28","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-use-a-pre-defined-scale-to-place-elements.md","articles":[]},{"title":"Data Visualization with D3: Add Axes to a Visualization","level":"3.1.29","depth":2,"path":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.md","ref":"data-visualization-certification/data-visualization-with-d3/data-visualization-with-d3-add-axes-to-a-visualization.md","articles":[]}]},"previous":{"title":"React and Redux: Extract Local State into Redux","level":"2.3.9","depth":2,"path":"react-and-redux/react-and-redux-extract-local-state-into-redux.md","ref":"react-and-redux/react-and-redux-extract-local-state-into-redux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","-search","-lunr","-highlight","search-plus","github","prism","prism-themes","github-buttons","splitter","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"github":{"url":"https://github.com/PortgasAce/FreeCodeCamp-Solution"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night"},"sitemap":{"hostname":"http://fcc.fiftykg.com/"},"prism-themes":{},"github-buttons":{"user":"PortgasAce","repo":"FreeCodeCamp-Solution","type":"star","size":"large"},"ga":{"configuration":"auto","token":"UA-105828632-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Portgas <portgas.ly@foxmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FreeCodeCamp Solution","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"My Simple Blog":"http://blog.fiftykg.com"}},"gitbook":"*","description":"FreeCodeCamp Solution","extension":null},"file":{"path":"react-and-redux/react-and-redux-moving-forward-from-here.md","mtime":"2018-08-26T12:45:26.434Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-27T17:14:30.982Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1432,19 +1528,27 @@ console.log(&apos;Now I know React and Redux!&apos;)
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         

@@ -90,4 +90,8 @@
 <url> <loc>http://fcc.fiftykg.com/data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-pre-filter-json-to-get-the-data-you-need.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://fcc.fiftykg.com/data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-get-geolocation-data-to-find-a-users-gps-coordinates.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://fcc.fiftykg.com/data-visualization-certification/introduction-to-the-json-apis-and-ajax-challenges/json-apis-and-ajax-post-data-with-the-javascript-xmlhttprequest-method.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://fcc.fiftykg.com/apis-and-microservices-certification/managing-packages-with-npm.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://fcc.fiftykg.com/apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://fcc.fiftykg.com/apis-and-microservices-certification/basic-node-and-express.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://fcc.fiftykg.com/apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
