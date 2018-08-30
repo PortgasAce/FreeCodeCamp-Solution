@@ -110,6 +110,8 @@
   * [Managing Packages with Npm - Expand Your Project with External Packages from npm](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-expand-your-project-with-external-packages-from-npm.md)
   * [Managing Packages with Npm - Manage npm Dependencies By Understanding Semantic Versioning](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-manage-npm-dependencies-by-understanding-semantic-versioning.md)
   * [Managing Packages with Npm - Use the Tilde-Character to Always Use the Latest Patch Version of a Dependency](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-use-the-tilde-character-to-always-use-the-latest-patch-version-of-a-dependency.md)
+  * [Managing Packages with Npm - Use the Caret-Character to Use the Latest Minor Version of a Dependency](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-use-the-caret-character-to-use-the-latest-minor-version-of-a-dependency.md)
+  * [Managing Packages with Npm - Remove a Package from Your Dependencies](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-remove-a-package-from-your-dependencies.md)
 * [Basic Node and Express](apis-and-microservices-certification/basic-node-and-express.md)
   * [Basic Node and Express - Meet the Node console](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.md)
 
