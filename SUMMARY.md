@@ -116,4 +116,5 @@
   * [Basic Node and Express - Meet the Node console](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.md)
   * [Basic Node and Express - Start a Working Express Server](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-start-a-working-express-server.md)
   * [Basic Node and Express - Serve an HTML File](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-serve-an-html-file.md)
+  * [Basic Node and Express - Serve Static Assets](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-serve-static-assets.md)
 
