@@ -103,6 +103,13 @@
 
 * [Managing Packages with Npm](apis-and-microservices-certification/managing-packages-with-npm.md)
   * [Managing Packages with Npm - How to Use package.json, the Core of Any Node.js Project or npm Package](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-how-to-use-packagejson-the-core-of-any-nodejs-project-or-npm-package.md)
+  * [Managing Packages with Npm - Add a Description to Your package.json](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-add-a-description-to-your-packagejson.md)
+  * [Managing Packages with Npm - Add Keywords to Your package.json](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-add-keywords-to-your-packagejson.md)
+  * [Managing Packages with Npm - Add a License to Your package.json](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-add-a-license-to-your-packagejson.md)
+  * [Managing Packages with Npm - Add a Version to Your package.json](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-add-a-version-to-your-packagejson.md)
+  * [Managing Packages with Npm - Expand Your Project with External Packages from npm](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-expand-your-project-with-external-packages-from-npm.md)
+  * [Managing Packages with Npm - Manage npm Dependencies By Understanding Semantic Versioning](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-manage-npm-dependencies-by-understanding-semantic-versioning.md)
+  * [Managing Packages with Npm - Use the Tilde-Character to Always Use the Latest Patch Version of a Dependency](apis-and-microservices-certification/managing-packages-with-npm/managing-packages-with-npm-use-the-tilde-character-to-always-use-the-latest-patch-version-of-a-dependency.md)
 * [Basic Node and Express](apis-and-microservices-certification/basic-node-and-express.md)
   * [Basic Node and Express - Meet the Node console](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-meet-the-node-console.md)
 
