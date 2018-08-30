@@ -123,4 +123,5 @@
   * [Basic Node and Express - Chain Middleware to Create a Time Server](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-chain-middleware-to-create-a-time-server.md)
   * [Basic Node and Express - Get Route Parameter Input from the Client](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-get-route-parameter-input-from-the-client.md)
   * [Basic Node and Express - Get Query Parameter Input from the Client](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-get-query-parameter-input-from-the-client.md)
+  * [Basic Node and Express - Use body-parser to Parse POST Requests](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-use-body-parser-to-parse-post-requests.md)
 
