@@ -121,4 +121,5 @@
   * [Basic Node and Express - Use the .env File](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-use-the-env-file.md)
   * [Basic Node and Express - Implement a Root-Level Request Logger Middleware](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-implement-a-root-level-request-logger-middleware.md)
   * [Basic Node and Express - Chain Middleware to Create a Time Server](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-chain-middleware-to-create-a-time-server.md)
+  * [Basic Node and Express - Get Route Parameter Input from the Client](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-get-route-parameter-input-from-the-client.md)
 
