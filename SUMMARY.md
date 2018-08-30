@@ -120,4 +120,5 @@
   * [Basic Node and Express - Serve JSON on a Specific Route](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-serve-json-on-a-specific-route.md)
   * [Basic Node and Express - Use the .env File](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-use-the-env-file.md)
   * [Basic Node and Express - Implement a Root-Level Request Logger Middleware](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-implement-a-root-level-request-logger-middleware.md)
+  * [Basic Node and Express - Chain Middleware to Create a Time Server](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-chain-middleware-to-create-a-time-server.md)
 
