@@ -118,4 +118,5 @@
   * [Basic Node and Express - Serve an HTML File](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-serve-an-html-file.md)
   * [Basic Node and Express - Serve Static Assets](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-serve-static-assets.md)
   * [Basic Node and Express - Serve JSON on a Specific Route](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-serve-json-on-a-specific-route.md)
+  * [Basic Node and Express - Use the .env File](apis-and-microservices-certification/basic-node-and-express/basic-node-and-express-use-the-env-file.md)
 
