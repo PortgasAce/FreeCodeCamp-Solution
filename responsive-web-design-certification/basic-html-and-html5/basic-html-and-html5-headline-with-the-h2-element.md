@@ -9,5 +9,6 @@ This element tells the browser about the structure of your website. h1 elements 
 Add an h2 tag that says "CatPhotoApp" to create a second HTML element below your "Hello World" h1 element.
 
 ```
-
+<h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
 ```
