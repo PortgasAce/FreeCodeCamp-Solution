@@ -6,6 +6,7 @@
 
 ## Responsive Web Design Certification
 
+* [Basic HTML and HTML5](responsive-web-design-certification/basic-html-and-html5.md)
 
 ## Front End Libraries Certification
 
