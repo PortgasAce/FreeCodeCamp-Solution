@@ -13,6 +13,7 @@
   * [Basic HTML and HTML5: Fill in the Blank with Placeholder Text](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-fill-in-the-blank-with-placeholder-text.md)
   * [Basic HTML and HTML5: Uncomment HTML](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-uncomment-html.md)
   * [Basic HTML and HTML5: Comment out HTML](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-comment-out-html.md)
+  * [Basic HTML and HTML5: Delete HTML Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-delete-html-elements.md)
 
 ## Front End Libraries Certification
 
