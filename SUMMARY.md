@@ -10,6 +10,7 @@
   * [Basic HTML and HTML5: Say Hello to HTML Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-say-hello-to-html-elements.md)
   * [Basic HTML and HTML5: Headline with the h2 Element](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-headline-with-the-h2-element.md)
   * [Basic HTML and HTML5: Inform with the Paragraph Element](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-inform-with-the-paragraph-element.md)
+  * [Basic HTML and HTML5: Fill in the Blank with Placeholder Text](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-fill-in-the-blank-with-placeholder-text.md)
 
 ## Front End Libraries Certification
 
