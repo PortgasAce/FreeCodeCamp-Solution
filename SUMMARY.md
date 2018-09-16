@@ -15,6 +15,7 @@
   * [Basic HTML and HTML5: Comment out HTML](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-comment-out-html.md)
   * [Basic HTML and HTML5: Delete HTML Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-delete-html-elements.md)
   * [Basic HTML and HTML5: Introduction to HTML5 Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-introduction-to-html5-elements.md)
+  * [Basic HTML and HTML5: Add Images to Your Website](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-add-images-to-your-website.md)
 
 ## Front End Libraries Certification
 
