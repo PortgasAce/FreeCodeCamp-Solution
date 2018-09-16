@@ -8,6 +8,7 @@
 
 * [Basic HTML and HTML5](responsive-web-design-certification/basic-html-and-html5.md)
   * [Basic HTML and HTML5: Say Hello to HTML Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-say-hello-to-html-elements.md)
+  * [Basic HTML and HTML5: Headline with the h2 Element](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-headline-with-the-h2-element.md)
 
 ## Front End Libraries Certification
 
