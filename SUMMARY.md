@@ -25,6 +25,7 @@
   * [Basic HTML and HTML5: Create an Ordered List](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-an-ordered-list.md)
   * [Basic HTML and HTML5: Create a Text Field](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-text-field.md)
   * [Basic HTML and HTML5: Add Placeholder Text to a Text Field](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-add-placeholder-text-to-a-text-field.md)
+  * [Basic HTML and HTML5: Create a Form Element](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-form-element.md)
 
 ## Front End Libraries Certification
 
