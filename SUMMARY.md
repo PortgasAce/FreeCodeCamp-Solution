@@ -31,6 +31,7 @@
   * [Basic HTML and HTML5: Create a Set of Radio Buttons](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-set-of-radio-buttons.md)
   * [Basic HTML and HTML5: Create a Set of Checkboxes](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-set-of-checkboxes.md)
   * [Basic HTML and HTML5: Check Radio Buttons and Checkboxes by Default](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-check-radio-buttons-and-checkboxes-by-default.md)
+  * [Basic HTML and HTML5: Nest Many Elements within a Single div Element](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-nest-many-elements-within-a-single-div-element.md)
 
 ## Front End Libraries Certification
 

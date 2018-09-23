@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Create a Set of Checkboxes
+# Basic HTML and HTML5: Create a Set of Checkboxes
 Forms commonly use checkboxes for questions that may have more than one answer.
 
 Checkboxes are a type of input
