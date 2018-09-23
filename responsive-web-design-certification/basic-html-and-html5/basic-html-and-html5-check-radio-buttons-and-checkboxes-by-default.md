@@ -8,3 +8,6 @@ To do this, just add the word "checked" to the inside of an input element. For e
 
 Set the first of your radio buttons and the first of your checkboxes to both be checked by default.
 
+```
+
+```
