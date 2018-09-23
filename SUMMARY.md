@@ -29,6 +29,7 @@
   * [Basic HTML and HTML5: Add a Submit Button to a Form](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-add-a-submit-button-to-a-form.md)
   * [Basic HTML and HTML5: Use HTML5 to Require a Field](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-use-html5-to-require-a-field.md)
   * [Basic HTML and HTML5: Create a Set of Radio Buttons](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-set-of-radio-buttons.md)
+  * [Basic HTML and HTML5: Create a Set of Checkboxes](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-set-of-checkboxes.md)
 
 ## Front End Libraries Certification
 
