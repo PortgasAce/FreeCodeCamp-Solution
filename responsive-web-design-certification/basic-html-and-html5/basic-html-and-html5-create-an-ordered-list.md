@@ -36,5 +36,4 @@ Create an ordered list of the top 3 things cats hate the most.
   </ol>
   
 </main>
-
 ```
