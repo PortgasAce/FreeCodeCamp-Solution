@@ -26,6 +26,3 @@ Here's a link to freecodecamp.org for you to follow.
 
 
 Now nest your existing a element within a new p element (just after the existing main element). The new paragraph should have text that says "View more cat photos", where "cat photos" is a link, and the rest of the text is plain text.
-
-```
-```
