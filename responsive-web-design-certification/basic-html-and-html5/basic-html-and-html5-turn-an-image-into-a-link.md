@@ -13,4 +13,5 @@ Place the existing image element within an anchor element.
 Once you've done this, hover over your image with your cursor. Your cursor's normal pointer should become the link clicking pointer. The photo is now a link.
 
 ```
+
 ```
