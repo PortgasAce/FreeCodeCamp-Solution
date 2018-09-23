@@ -20,6 +20,7 @@
   * [Basic HTML and HTML5: Link to Internal Sections of a Page with Anchor Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-link-to-internal-sections-of-a-page-with-anchor-elements.md)
   * [Basic HTML and HTML5: Nest an Anchor Element within a Paragraph](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-nest-an-anchor-element-within-a-paragraph.md)
   * [Basic HTML and HTML5: Make Dead Links Using the Hash Symbol](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-make-dead-links-using-the-hash-symbol.md)
+  * [Basic HTML and HTML5: Turn an Image into a Link](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-turn-an-image-into-a-link.md)
 
 ## Front End Libraries Certification
 
