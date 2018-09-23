@@ -27,6 +27,7 @@
   * [Basic HTML and HTML5: Add Placeholder Text to a Text Field](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-add-placeholder-text-to-a-text-field.md)
   * [Basic HTML and HTML5: Create a Form Element](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-form-element.md)
   * [Basic HTML and HTML5: Add a Submit Button to a Form](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-add-a-submit-button-to-a-form.md)
+  * [Basic HTML and HTML5: Use HTML5 to Require a Field](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-use-html5-to-require-a-field.md)
 
 ## Front End Libraries Certification
 
