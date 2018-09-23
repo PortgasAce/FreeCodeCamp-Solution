@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Link to Internal Sections of a Page with Anchor Elements
+# Basic HTML and HTML5: Link to Internal Sections of a Page with Anchor Elements
 Anchor elements can also be used to create internal links to jump to different sections within a webpage.
 
 To create an internal link, you assign a link's href attribute to a hash symbol # plus the value of the id attribute for the element that you want to internally link to, usually further down the page. You then need to add the same id attribute to the element you are linking to. An id is an attribute that uniquely describes an element.

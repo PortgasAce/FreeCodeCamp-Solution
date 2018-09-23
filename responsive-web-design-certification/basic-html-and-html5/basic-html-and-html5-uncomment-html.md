@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Uncomment HTML
+# Basic HTML and HTML5: Uncomment HTML
 Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed to the end user.
 
 Commenting is also a convenient way to make code inactive without having to delete it entirely.

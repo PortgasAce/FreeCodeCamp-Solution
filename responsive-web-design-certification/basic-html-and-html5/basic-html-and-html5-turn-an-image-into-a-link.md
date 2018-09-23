@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Turn an Image into a Link
+# Basic HTML and HTML5: Turn an Image into a Link
 You can make elements into links by nesting them within an a element.
 
 Nest your image within an a element. Here's an example:

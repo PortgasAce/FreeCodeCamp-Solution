@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Introduction to HTML5 Elements
+# Basic HTML and HTML5: Introduction to HTML5 Elements
 HTML5 introduces more descriptive HTML tags. These include header, footer, nav, video, article, section and others.
 
 These tags make your HTML easier to read, and also help with Search Engine Optimization (SEO) and accessibility.

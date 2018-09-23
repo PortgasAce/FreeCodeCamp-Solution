@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Fill in the Blank with Placeholder Text
+# Basic HTML and HTML5: Fill in the Blank with Placeholder Text
 Web developers traditionally use lorem ipsum text as placeholder text. The 'lorem ipsum' text is randomly scraped from a famous passage by Cicero of Ancient Rome.
 
 Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web.

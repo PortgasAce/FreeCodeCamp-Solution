@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Add Images to Your Website
+# Basic HTML and HTML5: Add Images to Your Website
 You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.
 
 An example of this would be:

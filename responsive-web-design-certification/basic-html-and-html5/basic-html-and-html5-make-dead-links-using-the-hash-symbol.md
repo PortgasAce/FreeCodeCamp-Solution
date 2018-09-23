@@ -1,4 +1,4 @@
-Basic HTML and HTML5: Make Dead Links Using the Hash Symbol
+# Basic HTML and HTML5: Make Dead Links Using the Hash Symbol
 Sometimes you want to add a elements to your website before you know where they will link.
 
 This is also handy when you're changing the behavior of a link using JavaScript, which we'll learn about later.
