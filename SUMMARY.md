@@ -23,6 +23,7 @@
   * [Basic HTML and HTML5: Turn an Image into a Link](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-turn-an-image-into-a-link.md)
   * [Basic HTML and HTML5: Create a Bulleted Unordered List](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-bulleted-unordered-list.md)
   * [Basic HTML and HTML5: Create an Ordered List](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-an-ordered-list.md)
+  * [Basic HTML and HTML5: Create a Text Field](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-create-a-text-field.md)
 
 ## Front End Libraries Certification
 
