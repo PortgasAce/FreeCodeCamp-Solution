@@ -13,4 +13,5 @@ Note that input elements are self-closing.
 Create an input element of type text below your lists.
 
 ```
+
 ```
