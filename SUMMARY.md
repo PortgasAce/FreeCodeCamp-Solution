@@ -17,6 +17,7 @@
   * [Basic HTML and HTML5: Introduction to HTML5 Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-introduction-to-html5-elements.md)
   * [Basic HTML and HTML5: Add Images to Your Website](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-add-images-to-your-website.md)
   * [Basic HTML and HTML5: Link to External Pages with Anchor Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-link-to-external-pages-with-anchor-elements.md)
+  * [Basic HTML and HTML5: Link to Internal Sections of a Page with Anchor Elements](responsive-web-design-certification/basic-html-and-html5/basic-html-and-html5-link-to-internal-sections-of-a-page-with-anchor-elements.md)
 
 ## Front End Libraries Certification
 
